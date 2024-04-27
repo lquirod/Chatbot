@@ -2,7 +2,7 @@
 version: "3.1"
 
 nlu:
-- intent: Adopción
+- intent: Adopcion
  examples: |
  - Deseo [adoptar](adop) un perro de un refugio
  - ¿Cómo puedo [adoptar](adop) un gato de la protectora?
@@ -16,6 +16,121 @@ nlu:
  - Quiero [adoptar](adop) una mascota
 
 - lookup: adop
-  examples:
+  examples: |
   - adoptar
   - adopción
+
+- intent: Ayuda
+  examples: |
+  - ¿Como puedo [ayudar](ayud)?
+  - ¿Qué puedo hacer?
+  - ¿Qué hace este bot?
+  - ¿En qué me puedes [ayudar](ayud)?
+  - ¿Estoy perdido, ¿me puedes [orientar](ayud)?
+  - ¿Cuál es tu función?
+  - ¿Estoy teniendo dificultades, ¿me puedes [asistir](ayud)?
+  - ¿Cómo puedo obtener más información sobre tus funciones?
+  - Me siento confundido, ¿me puedes dar información?
+  - ¿Puedes proporcionar [ayuda](ayud) con problemas técnicos?
+  - ¿Qué tipo de [soporte](ayud) puedo recibir?
+  - ¿Cuáles son tus capacidades de [asistencia](ayud)?
+  - ¿No sé por dónde empezar, ¿me puedes [guiar](ayud)?
+  - ¿Puedes [explicar](ayud) qué servicios ofreces?
+  - ¿Cómo puedo obtener [ayuda](ayud)?"
+  - ¿Necesito asistencia, ¿puedes [ayudarme](ayud)?
+
+- lookup: ayud
+  examples: |
+  - ayuda
+  - ayudar
+  - ayudarme
+  - guiar
+  - explicar
+  - asistir
+  - asistencia
+  - soporte
+  - orientar
+
+- intent: MasInformacion
+  examples: |
+  - ¿Quiénes sois?
+  - ¿Me das información de la fundación?"
+  - ¿Tiene más información sobre el evento?"
+  - ¿Dónde puedo encontrar más información sobre sus servicios?"
+  - ¿Podría obtener más información de la empresa?"
+  - ¿Cuál es la forma de contacto para obtener más información?"
+  - ¿Puede darme más detalles sobre su equipo?"
+  - Cómo me pongo en contacto"
+  - ¿Dónde puedo obtener más detalles sobre sus productos?"
+  - Cual es el horario"
+  - cuando está abierto"
+  - cuando puedo ir"
+  - donde voy"
+  - ¿Cuál es la ubicación exacta?"
+  - ¿Puedo obtener información adicional sobre los precios?"
+  - ¿Hay alguna oferta disponible?"
+  - ¿Cuáles son los métodos de pago aceptados?"
+  - ¿Puedo ver el menú antes de ir?"
+  - ¿Qué servicios adicionales ofrecen?"
+  - ¿Tienen alguna promoción especial próximamente?"
+  - ¿Puedo hacer una reserva con antelación?"
+  - ¿Dónde puedo encontrar opiniones de otros clientes?"
+  - ¿Cuál es la política de devoluciones?"
+
+- intent: Saludos
+  examples: |
+    - [Hola](saludar) [buenas](saludar)
+    - [Hola](saludar)
+    - Buenos días
+    - [Saludos](saludar)
+    - ¡[Hola](saludar), buenos días! ¿Cómo va todo?
+    - [Saludos](saludar), ¿cómo has estado?
+    - ¡[Hola](saludar), que tengas un buen día!
+    - [Hola](saludar), amigo
+    - [Buenas](saludar) noches
+    - ¡[Hola](saludar), buenos días!
+    - [Saludos](saludar) cordiales
+    - [Hola](saludar), ¿cómo estás?
+    - [Buenas](saludar) tardes
+    - ¡[Hola](saludar), qué tal!
+
+- lookup: saludar
+  examples: |
+  - Hola
+  - Buenas
+  - Saludos
+  - saludar
+
+- intent: Adios
+  examples: |
+    - [Despedida](despedida)
+    - Nada más
+    - [Adiós](despedida)
+    - [Buenas](saludar) noches
+    - Nos [despedimos](despedida)
+    - Hasta mañana
+    - [Adiós](despedida) amigo
+    - Hasta pronto
+    - Hasta la vista
+    - [Chao](despedida)
+    - Nos vemos
+    - Hasta luego
+    - [Adiós](despedida), hasta pronto
+    - Hasta la próxima vez
+    - [Adiós](despedida), nos vemos
+
+- lookup: despedir
+  examples: |
+  - Despedida
+  - adiós
+  - chao
+  - despedimos
+
+- intent: Evento_de_Adopción
+  examples: |
+    - Eventos de Adopción
+    - ¿Es necesario registrarse para participar en un Evento de Adopción?
+    - Estoy interesado en asistir a un Evento de Adopción, ¿dónde puedo obtener más información?
+    - ¿Qué tipo de mascotas estarán disponibles en el Evento de Adopción?
+    - Quiero saber la fecha del próximo Evento de Adopción
+    - ¿Habrá más Eventos de Adopción próximamente?
