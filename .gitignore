@@ -51,3 +51,5 @@ ChatbotD/bin/.ropeproject
 
 # PyCharm project settings (if using PyCharm)
 ChatbotD/bin/.idea/
+
+.rasa/*
