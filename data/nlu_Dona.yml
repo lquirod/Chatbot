@@ -1,0 +1,47 @@
+# // Lo que puede decir el usuario
+version: "3.1"
+
+nlu:
+
+- lookup: donativo
+ examples: |
+ - efectivo
+ - donacion
+ - dinero
+ - materiales
+ - fondos
+ - aportación
+ - donativo
+ - aporte
+
+
+- lookup: donar
+ examples: |
+ - donar
+ - dar
+ - ofrecer
+ - entregar
+ - colaborar
+ - contribuir
+
+
+- intent: Donacion
+ examples: |
+ - quiero [donar](donar) [donar](donativo)
+ - [donar](donar) [donar](donativo)
+ - quiero [donar](donativo)
+
+- intent: Bizum
+ examples: |
+ - Por Bizum
+ - Pagar por Bizum
+ - Bizum
+ - quiero [donar](donativo)
+
+                "text": "donar por bizum",
+                "text": "Pagar con Bizum en esta tienda",
+                "text": "Enviar dinero con Bizum",
+                "text": "Pagar con Bizum en tiendas y comercios",
+                "text": "Bizum para empezar a transferir dinero",
+                "text": "Con Bizum puedes transferir dinero de forma rápida",
+                "text": "Realizar transacciones seguras con Bizum",

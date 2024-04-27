@@ -1,0 +1,12 @@
+version: "3.1"
+
+nlu:
+- lookup: ugr
+ examples: |
+ - ugr
+ - Universidad de Granada
+ - uni de granada
+ 
+- regex: year
+ examples: |
+ - \d{2}(?:\d{2})?

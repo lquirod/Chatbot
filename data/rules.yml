@@ -1,0 +1,31 @@
+version: "3.1"
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Responder a solicitud de voluntariado
+  steps:
+  - intent: Voluntariado
+  - action: utter_voluntariado
+
+- rule: Responder a solicitud de voluntariado en albergue
+  steps:
+  - intent: Voluntariado_Albergue
+  - action: utter_voluntariado_albergue
+
+- rule: Responder a solicitud de voluntariado en eventos
+  steps:
+  - intent: Voluntariado_Eventos
+  - action: utter_voluntariado_eventos
+
+- rule: Responder a solicitud de voluntariado en recaudación de fondos
+  steps:
+  - intent: Voluntariado_Recaudacion
+  - action: utter_voluntariado_recaudacion

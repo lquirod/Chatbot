@@ -1,0 +1,21 @@
+# // Lo que puede decir el usuario
+version: "3.1"
+
+nlu:
+- intent: Adopción
+ examples: |
+ - Deseo [adoptar](adop) un perro de un refugio
+ - ¿Cómo puedo [adoptar](adop) un gato de la protectora?
+ - Quiero [adoptar](adop) un animal de compañía
+ - ¿Es posible [adoptar](adop) un animal en situación de abandono?
+ - ¿Es complicado [adoptar](adop) un perro de la perrera?
+ - Quisiera [adoptar](adop) un gatito de la calle
+ - ¿Cuáles son los requisitos para [adoptar](adop) un animal abandonado?
+ - Estoy interesado en [adoptar](adop) un conejo de un centro de rescate
+ - ¿Es posible [adoptar](adop) un animal enfermo de un refugio?
+ - Quiero [adoptar](adop) una mascota
+
+- lookup: adop
+  examples:
+  - adoptar
+  - adopción

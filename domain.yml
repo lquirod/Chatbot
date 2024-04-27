@@ -1,0 +1,68 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - Saludos
+  - Ayuda
+  - Donación
+  - Donación monetaria
+  - Donación material
+  - Voluntariado
+  - Voluntariado_Albergue
+  - Voluntariado_Eventos
+  - Voluntariado_Recaudacion
+  - Adoptar
+  - Más Informacion
+  - Adiós
+
+entities:
+- tipo_voluntariado
+
+slots:
+  tipo_voluntariado:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: tipo_voluntariado
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_voluntariado:
+  - text: "¡Genial! Para realizar un voluntariado con nosotros, tienes las siguientes opciones: Ayudar en el albergue, Participar en eventos de adopción o Participar en actividades de recaudación de fondos. ¿En qué área te gustaría colaborar?"
+
+  utter_voluntariado_albergue:
+  - text: "¡Fantástico! Para ayudar en nuestro albergue, necesitamos voluntarios en diferentes áreas como cuidado de animales, limpieza y mantenimiento. ¿Qué días y horarios te quedarían bien para venir a echarnos una mano?"
+
+  utter_voluntariado_eventos:
+  - text: "¡Increíble! Participar en nuestros eventos de adopción es una excelente manera de ayudar. Necesitamos voluntarios para tareas como organización, atención al público y cuidado de los animales durante el evento. ¿Qué fechas te vienen bien para participar?"
+
+  utter_voluntariado_recaudacion:
+  - text: "¡Muchas gracias por tu interés en participar en nuestras actividades de recaudación de fondos! Puedes ayudarnos en la organización de eventos, difusión en redes sociales y captación de donaciones. ¿En qué actividad específica te gustaría colaborar?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
