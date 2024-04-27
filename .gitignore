@@ -1,0 +1,53 @@
+# Ignore everything in the bin directory
+ChatbotD/bin/*
+
+# Specific exceptions (if you want to keep track of specific files inside bin)
+!ChatbotD/bin/README.md
+!ChatbotD/bin/*.config
+
+# Python and Virtual Environment related
+ChatbotD/bin/__pycache__/
+ChatbotD/bin/*.py[cod]
+ChatbotD/bin/*$py.class
+ChatbotD/bin/*.so
+ChatbotD/bin/.Python
+
+# Environment files
+ChatbotD/bin/.env
+ChatbotD/bin/*.env
+ChatbotD/bin/.venv
+ChatbotD/bin/venv/
+
+# Distribution / packaging
+ChatbotD/bin/build/
+ChatbotD/bin/dist/
+ChatbotD/bin/eggs/
+ChatbotD/bin/parts/
+ChatbotD/bin/sdist/
+ChatbotD/bin/var/
+ChatbotD/bin/wheels/
+ChatbotD/bin/*.egg-info/
+
+# Rasa specific
+ChatbotD/bin/models/
+ChatbotD/bin/*.db
+
+# Coverage reports, cache files
+ChatbotD/bin/htmlcov/
+ChatbotD/bin/.coverage
+ChatbotD/bin/.cache
+ChatbotD/bin/.pytest_cache/
+ChatbotD/bin/*.log
+
+# Jupyter Notebook
+ChatbotD/bin/.ipynb_checkpoints
+
+# Spyder project settings
+ChatbotD/bin/.spyderproject
+ChatbotD/bin/.spyproject
+
+# Rope project settings
+ChatbotD/bin/.ropeproject
+
+# PyCharm project settings (if using PyCharm)
+ChatbotD/bin/.idea/
