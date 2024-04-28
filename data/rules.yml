@@ -1,31 +1,74 @@
 version: "3.1"
 rules:
-- rule: Say goodbye anytime the user says goodbye
+- rule: El usuario quiere realizar una donación
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - intent: Donacion
+  - action: utter_Donacion
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: El usuario quiere realizar una donación monetaria
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - intent: Donación_monetaria
+  - action: utter_Donación_monetaria
 
-- rule: Responder a solicitud de voluntariado
+- rule: El usuario quiere realizar la donación monetaria por bizum 
   steps:
-  - intent: Voluntariado
-  - action: utter_voluntariado
+  - intent: Bizum
+  - action: utter_Bizum
 
-- rule: Responder a solicitud de voluntariado en albergue
+- rule: El usuario quiere realizar la donación monetaria en efectivo 
   steps:
-  - intent: Voluntariado_Albergue
-  - action: utter_voluntariado_albergue
+  - intent: Efectivo
+  - action: utter_Efectivo
 
-- rule: Responder a solicitud de voluntariado en eventos
+- rule: El usuario quiere realizar la donación monetaria por transferencia bancaria 
   steps:
-  - intent: Voluntariado_Eventos
-  - action: utter_voluntariado_eventos
+  - intent: Transferencia_bancaria
+  - action: utter_Transferencia_bancaria
 
-- rule: Responder a solicitud de voluntariado en recaudación de fondos
+- rule: El usuario quiere realizar una donación de materiales
   steps:
-  - intent: Voluntariado_Recaudacion
-  - action: utter_voluntariado_recaudacion
+  - intent: Donacion_Material
+  - action: utter_Donacion_Material
+
+- rule: El usuario quiere cambiar la cantidad de donación monetaria
+  steps:
+  - intent: CambiarCantidad
+  - action: utter_CambiarCantidad
+  
+- rule: El usuario cancela su operación
+  steps:
+  - intent: Cancelar
+  - action: utter_Cancelar
+
+#Adoptar
+- rule: Responder a solicitud de adoptar
+  steps:
+  - intent: Adopcion
+  - action: utter_Adopcion_Requisitos
+
+- rule: Responder a solicitud de ayuda
+  steps:
+  - intent: Ayuda
+  - action: utter_Ayuda
+
+- rule: Responder a solicitud de Más Información
+  steps:
+  - intent: MasInformacion
+  - action: utter_Mas_Informacion
+
+- rule: Responder a saludos
+  steps:
+  - intent: Saludos
+  - action: utter_Saludar
+
+- rule: Responder a despedida
+  steps:
+  - intent: Adios
+  - action: utter_Adios
+
+- rule: Responder a solicitud de eventos de adopción
+  steps:
+  - intent: Evento_de_Adopcion
+  - action:
+    - utter_Adopcion_Requisitos
+    - utter_Visita_Refugio

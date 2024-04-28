@@ -20,9 +20,13 @@ intents:
   - Adoptar
   - Más Informacion
   - Adiós
+  - Cancelar
 
 entities:
-- tipo_voluntariado
+  - tipo_voluntariado
+  - NameCompany
+  - FundacionDireccion
+  - FundaciopnTlfno
 
 slots:
   tipo_voluntariado:
@@ -31,10 +35,42 @@ slots:
     - type: from_entity
       entity: tipo_voluntariado
 
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+  NameCompany:
+    type: text
+    influence_conversation: false
+    initial value: AyudaPet
+    mappings:
+    - type: custom
 
+  FundacionDireccion:
+    type: text
+    influence_conversation: false
+    initial value: Camino de la Aurora, 5, CP 18330, Granada
+    mappings:
+    - type: custom
+
+  FundaciopnTlfno:
+    type: text
+    influence_conversation: false
+    initial value: +34 685650558
+    mappings:
+    - type: custom
+
+  FundacionWeb:
+    type: text
+    influence_conversation: false
+    initial value: www.refugioanimal.com
+    mappings:
+    - type: custom
+
+  FundacionCorreo:
+    type: text
+    influence_conversation: false
+    initial value: AyudaPet@correo.es
+    mappings:
+    - type: custom
+
+responses:
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
@@ -62,6 +98,74 @@ responses:
 
   utter_voluntariado_recaudacion:
   - text: "¡Muchas gracias por tu interés en participar en nuestras actividades de recaudación de fondos! Puedes ayudarnos en la organización de eventos, difusión en redes sociales y captación de donaciones. ¿En qué actividad específica te gustaría colaborar?"
+
+  utter_Cancelando:
+  - text: "Cancelando operación..."
+  
+#Adoptar
+
+  utter_Adopcion_Requisitos:
+  - text: |
+    ¡Genial! Si estás pensando en realizar una adopción, primero debes cumplir los siguientes requisitos:
+    - Ser mayor de edad o contar con la supervisión de un adulto responsable.
+    - Proporcionar un ambiente seguro y adecuado para la mascota.
+    - Comprometerse a brindar atención veterinaria regular, alimentación adecuada y ejercicio diario.
+    - Aceptar la responsabilidad de cuidar y amar a tu mascota durante toda su vida."
+
+  utter_Adopcion_Compromiso:
+  - text: "Recuerda que la adopción de una mascota es un compromiso a largo plazo y una decisión importante. ¡Estamos aquí para ayudarte en cada paso del proceso!"
+
+  utter_Informacion_Adicional:
+  - text: "Para más información visita nuestra web www.refugioanimal.com"
+
+  utter_Visita_Refugio:
+  - text: "Dicho esto, ¿cuándo te viene bien pasarte por nuestro refugio?"
+
+  utter_Participacion_Evento:
+  - text: |
+     Perfecto, entonces te apunto para participar en el evento de adopción el/los día(s) {fecha}.
+     ¿Es correcto?"
+
+  utter_Confirmacion_Participacion:
+  - text: "Perfecto, lo hemos anotado en nuestra agenda."
+
+  utter_No_Match_Inicio:
+  - text: "Lo siento, no estoy entendiendo tu pregunta. ¿Podrías proporcionar más detalles o reformularla de otra manera?"
+
+  utter_No_Match_Validar_Evento:
+  - text: "Por favor, elija una opción de los botones."
+
+  utter_Botones_Validar_Evento:
+  - text: |
+     Si.
+     No.
+     Cancelar.
+
+  utter_No_Reply_Inicio:
+  - text: "¿Qué acción quieres realizar?"
+
+  utter_Mas_Informacion:
+  - text: |
+     {NameCompany} es una fundación sin ánimo de lucro de ayuda a los animales sin hogar ofreciéndoles refugio y buscándoles un nuevo hogar.
+     Puedes contactarnos para solicitar más información en nuestro correo {FundacionCorreo}., por teléfono al {FundaciopnTlfno}  o el formulario en nuestra web {FundacionWeb}. Nuestra oficina se encuentra en {FundacionDireccion} , abierta de 8:00 a 19:00.
+     ¡Estaremos encantados de recibirte!
+
+  utter_Bienvenida:
+  - text: "Buenas, este es el asistente virtual de {NameCompany}. Somos una fundación de ayuda a los animales 🐾 en Granada sin ánimo de lucro."
+
+  utter_Ayuda:
+  - text: |
+    Con mi ayuda puedes realizar las siguientes acciones:
+
+    - Donaciones monetarias o de recursos.
+    - Voluntariado.
+    - Adoptar.
+
+  utter_Saludar:
+  - text: "¡Saludos!"
+
+  utter_Adios:
+  - text: "¡Adiós!, hasta luego."
 
 session_config:
   session_expiration_time: 60

@@ -1,47 +1,121 @@
 # // Lo que puede decir el usuario
 version: "3.1"
-
 nlu:
-
+# donación generico
 - lookup: donativo
- examples: |
- - efectivo
- - donacion
- - dinero
- - materiales
- - fondos
- - aportación
- - donativo
- - aporte
+  examples: |
+    - efectivo
+    - donacion
+    - dinero
+    - materiales
+    - fondos
+    - aportación
+    - donativo
+    - aporte
 
+# Monetario
+- lookup: monetario
+  examples: |
+    - dinero
+    - fondos
+    - donativo
+    - monetario
+    - monetariamente
+    - monetaria
+    - economica
 
+#  Material
+- lookup: material
+  examples: |
+    - material
+    - materiales
+    - comida
+    - mantas
+    - juguetes
+    - alimentos
+    - ropa
+    - suministros
+    - medicamentos
+
+# Acción donar
 - lookup: donar
- examples: |
- - donar
- - dar
- - ofrecer
- - entregar
- - colaborar
- - contribuir
+  examples: |
+    - donar
+    - dar
+    - ofrecer
+    - entregar
+    - colaborar
+    - contribuir
+    - Enviar
+
+- lookup: efectivo
+  examples: |
+    - efectivo
+    - en efectivo
+    - fisico
+    - fisicamente
+
+- lookup: transferencia
+  examples: |
+    - transferencia
+    - transferencia bancaria
+    - transferencia electronica
+    - el banco
+    - transferencia interbancaria
 
 
+# Querer donar genérico
 - intent: Donacion
- examples: |
- - quiero [donar](donar) [donar](donativo)
- - [donar](donar) [donar](donativo)
- - quiero [donar](donativo)
+  examples: |
+    - quiero [donar](donar) [donativo](donativo)
+    - [donar](donar) [donativo](donativo)
+    - quiero [donativo](donativo)
 
+# Donación monetaria
+- intent: Donación_monetaria
+  examples: |
+    - quiero [donar](donar) [monetario](monetario)
+    - [donar](donar) [monetario](monetario)
+    - quiero [monetario](monetario)
+    - quiero [donar](donar) [monetario](monetario)
+    - [donar](donar) [monetario](monetario)
+    - quiero [monetario](monetario)
+    - [monetario](monetario)
+
+# Tipos de donación monetaria
 - intent: Bizum
- examples: |
- - Por Bizum
- - Pagar por Bizum
- - Bizum
- - quiero [donar](donativo)
+  examples: |
+    - [donar](donar) por Bizum
+    - Por Bizum
+    - Bizum
 
-                "text": "donar por bizum",
-                "text": "Pagar con Bizum en esta tienda",
-                "text": "Enviar dinero con Bizum",
-                "text": "Pagar con Bizum en tiendas y comercios",
-                "text": "Bizum para empezar a transferir dinero",
-                "text": "Con Bizum puedes transferir dinero de forma rápida",
-                "text": "Realizar transacciones seguras con Bizum",
+- intent: Efectivo
+    - quiero [donar](donar) [efectivo](efectivo)
+    - [donar](donar) [donativo](donativo) [efectivo](efectivo)
+    - [donar](donar) [efectivo](efectivo)
+    - donde [donar](donar)
+    - [efectivo](efectivo)
+
+- intent: Transferencia_bancaria
+    - quiero [donar](donar) [transferencia](transferencia)
+    - [donar](donar) [donativo](donativo) [material](material)
+    - [donar](donar) por [transferencia](transferencia)
+    - Realizar una [transferencia](transferencia)
+    - [transferencia](transferencia)
+
+# Donación material
+- intent: Donacion_Material
+    - quiero [donar](donar) [material](material)
+    - [donar](donar) [donativo](donativo) [material](material)
+    - [donar](donar) [material](material)
+    - Realizar una [donar](donar) [material](material)
+    - [material](material)
+
+# Cantidad de donación
+- intent: Donar_Cantidad
+    - quiero [donar](donar) (5)[cantidad_donacion]
+    - [donar](donar) (20)[cantidad_donacion] [donativo](donativo) [material](material)
+    - [donar](donar) (15)[cantidad_donacion] [material](material)
+    - Realizar una [donar](donar) de (100)[cantidad_donacion]
+    - (10)[cantidad_donacion]
+

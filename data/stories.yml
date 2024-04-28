@@ -34,3 +34,52 @@ stories:
   - intent: Voluntariado
   - action: utter_voluntariado
 
+- story: Donación
+  steps:
+  - intent: Donacion
+  - action: utter_Donacion
+
+- story: Donación material
+  steps:
+  - intent: Donacion
+  - action: utter_Donacion
+  - intent: Donacion_Material
+  - action: utter_Donacion_Material
+  - action: utter_Agradecimiento_donacion
+
+- story: Donación monetaria efectivo
+  steps:
+  - intent: Donacion
+  - action: utter_Donacion
+  - intent: Donación_monetaria
+  - action: utter_Donación_monetaria
+  - intent: Efectivo
+  - action: utter_Efectivo
+  - action: utter_Agradecimiento_donacion
+
+- story: Donación monetaria bizum
+  steps:
+  - intent: Donación_monetaria
+  - action: utter_Donación_monetaria
+  - intent: Bizum
+  - action: utter_Bizum
+  - action: utter_Agradecimiento_donacion
+
+- story: Donación monetaria Efectivo
+  steps:
+  - intent: Donación_monetaria
+  - action: utter_Donación_monetaria
+  - slot_was_set:
+    - requested_slot: cantidad_donacion
+  - intent: Transferencia_bancaria
+  - action: utter_Transferencia_bancaria
+  - action: utter_Agradecimiento_donacion
+
+- story: Cancela una operación
+  steps:
+  - intent: Donación_monetaria
+  - action: utter_Donación_monetaria
+  - slot_was_set:
+    - requested_slot: cantidad_donacion
+  - intent: Cancelar
+  - action: utter_Cancelar

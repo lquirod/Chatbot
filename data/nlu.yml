@@ -204,3 +204,18 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+# Cancelar
+- lookup: accion
+  examples: |
+    - accion
+    - operación
+    - proceso
+
+- intent: Cancelar
+  examples: |
+    - Detener (accion)[accion]
+    - Cancelar (accion)[accion]
+    - Parar (accion)[accion]
+    - No seguir con (accion)[accion]
+    - Anular (accion)[accion]
