@@ -35,6 +35,7 @@ slots:
 
   tipo_donacion_monetaria:
     type: categorical
+    influence_conversation: true
     values:
       - por Bizum
       - por transferencia bancaria
@@ -50,17 +51,14 @@ responses:
   utter_Bizum:
   - text: |
     Perfecto, para poder enviarnos la donación mediante bizum hágalo a nuestro teléfono {FundaciopnTlfno} con el asunto "Donación {NameCompany}".
-    ¡Gracias por su donación para ayudar a nuestros amigos!
 
   utter_Efectivo:
   - text: |
     Si prefieres entregar tu donación en efectivo en nuestras oficinas, nuestro equipo estará encantado de recibirte y agradecerte personalmente por tu apoyo. Recibirás un comprobante de la donación realizada. Por favor, consulta nuestros horarios de atención y asegúrate de planificar tu visita. Te esperamos en {FundacionDireccion}
-    ¡Gracias por su donación para ayudar a nuestros amigos!
 
   utter_Transferencia_bancaria:
   - text: |
     Para realizar una donación por transferencia bancaria, ingrese su donación con el asunto: 'Donación {NameCompany}' en la siguiente cuenta: "IBAN ES70 1234 1234 0101 2345 6789"
-    ¡Gracias por su donación para ayudar a nuestros amigos!
 
   utter_Donacion_Material:
   - text:  |
@@ -72,7 +70,9 @@ responses:
       - Puedes contactar con nosotros a través de nuestro teléfono {FundaciopnTlfno}
 
     Si lo deseas, te animamos a revisar nuestra lista de necesidades prioritarias. Esto nos ayuda a garantizar que recibamos los materiales más necesarios en el momento adecuado. Puedes mirarlo en nuestra web www.refugioanimal.com/nr¡ecesidades
-    ¡Gracias por su donación para ayudar a nuestros amigos!
+
+  utter_Agradecimiento_donacion:
+  - text: "¡Gracias por su donación para ayudar a nuestros amigos!"
 
   utter_CambiarCantidad:
   - text: "¡Genial! Para realizar un voluntariado con nosotros, tienes las siguientes opciones: Ayudar en el albergue, Participar en eventos de adopción o Participar en actividades de recaudación de fondos. ¿En qué área te gustaría colaborar?"
