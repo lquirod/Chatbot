@@ -55,6 +55,19 @@ slots:
     mappings:
     - type: custom
 
+  FundacionWeb:
+    type: text
+    influence_conversation: false
+    initial value: www.refugioanimal.com
+    mappings:
+    - type: custom
+
+  FundacionCorreo:
+    type: text
+    influence_conversation: false
+    initial value: AyudaPet@correo.es
+    mappings:
+    - type: custom
 
 responses:
   utter_cheer_up:
@@ -129,12 +142,12 @@ responses:
 
   utter_Mas_Informacion:
   - text: |
-     AyudaPet es una fundación sin ánimo de lucro de ayuda a los animales sin hogar ofreciéndoles refugio y buscándoles un nuevo hogar.
-     Puedes contactarnos para solicitar más información en nuestro correo AyudaPet@correo.es., por teléfono al ...  o el formulario en nuestra web www.refugioanimal.com. Nuestra oficina se encuentra en ... , abierta de 8:00 a 19:00.
+     {NameCompany} es una fundación sin ánimo de lucro de ayuda a los animales sin hogar ofreciéndoles refugio y buscándoles un nuevo hogar.
+     Puedes contactarnos para solicitar más información en nuestro correo {FundacionCorreo}., por teléfono al {FundaciopnTlfno}  o el formulario en nuestra web {FundacionWeb}. Nuestra oficina se encuentra en {FundacionDireccion} , abierta de 8:00 a 19:00.
      ¡Estaremos encantados de recibirte!
 
   utter_Bienvenida:
-  - text: "Buenas, este es el asistente virtual de AyudaPet. Somos una fundación de ayuda a los animales 🐾 en Granada sin ánimo de lucro."
+  - text: "Buenas, este es el asistente virtual de {NameCompany}. Somos una fundación de ayuda a los animales 🐾 en Granada sin ánimo de lucro."
 
   utter_Ayuda:
   - text: |
