@@ -1,0 +1,78 @@
+version: "3.1"
+
+intents:
+  - Donacion
+  - Donación_monetaria
+  - Bizum
+  - Efectivo
+  - Transferencia_bancaria
+  - Donacion_Material
+  - CambiarCantidad
+
+entities:
+- tipo_donacion
+- cantidad_donacion
+- tipo_donacion_monetaria
+
+slots:
+  tipo_donacion:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: tipo_donacion
+
+  cantidad_donacion:
+    type: categorical
+    values:
+      - 5 €
+      - 10 €
+      - 15 €
+      - 20 €
+      - 30 €
+      - 50 €
+      - 100 €
+      - 200 €
+
+  tipo_donacion_monetaria:
+    type: categorical
+    influence_conversation: true
+    values:
+      - por Bizum
+      - por transferencia bancaria
+      - en efectivo
+
+responses:
+  utter_Donacion:
+  - text: "Puedes ayudarnos realizando una donación Económica o de recursos y materiales para nuestros animales (comida, juguetes, ropa etc)."
+
+  utter_Donación_monetaria:
+  - text: "Escoja la cantidad que desea donar en euros."
+
+  utter_Bizum:
+  - text: |
+    Perfecto, para poder enviarnos la donación mediante bizum hágalo a nuestro teléfono {FundaciopnTlfno} con el asunto "Donación {NameCompany}".
+
+  utter_Efectivo:
+  - text: |
+    Si prefieres entregar tu donación en efectivo en nuestras oficinas, nuestro equipo estará encantado de recibirte y agradecerte personalmente por tu apoyo. Recibirás un comprobante de la donación realizada. Por favor, consulta nuestros horarios de atención y asegúrate de planificar tu visita. Te esperamos en {FundacionDireccion}
+
+  utter_Transferencia_bancaria:
+  - text: |
+    Para realizar una donación por transferencia bancaria, ingrese su donación con el asunto: 'Donación {NameCompany}' en la siguiente cuenta: "IBAN ES70 1234 1234 0101 2345 6789"
+
+  utter_Donacion_Material:
+  - text:  |
+    Cualquier tipo de material que puedas donar es muy necesaria: Comida, ropita, juguetes, mantas,...
+
+    Te explicamos cómo puedes contribuir y realizar la entrega personal o a traves de envios a nuestras oficinas:
+      - Asegúrate de empaquetarlos de manera segura para evitar daños durante el transporte.
+      - Nuestra dirección es "{FundacionDireccion}", estaremos encantados de atenderte.
+      - Puedes contactar con nosotros a través de nuestro teléfono {FundaciopnTlfno}
+
+    Si lo deseas, te animamos a revisar nuestra lista de necesidades prioritarias. Esto nos ayuda a garantizar que recibamos los materiales más necesarios en el momento adecuado. Puedes mirarlo en nuestra web www.refugioanimal.com/nr¡ecesidades
+
+  utter_Agradecimiento_donacion:
+  - text: "¡Gracias por su donación para ayudar a nuestros amigos!"
+
+  utter_CambiarCantidad:
+  - text: "¡Genial! Para realizar un voluntariado con nosotros, tienes las siguientes opciones: Ayudar en el albergue, Participar en eventos de adopción o Participar en actividades de recaudación de fondos. ¿En qué área te gustaría colaborar?"
