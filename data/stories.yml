@@ -83,3 +83,27 @@ stories:
     - requested_slot: cantidad_donacion
   - intent: Cancelar
   - action: utter_Cancelar
+
+- story: Adoptar
+  steps:
+  - intent: Adopcion
+  - action: utter_Adopcion_Requisitos
+  - action: utter_Visita_Refugio
+  - action: utter_Seleccionar_Fecha
+  - intent: Evento_de_Adopcion_SI
+  - action: utter_Confirmacion_Participacion
+  - action: utter_Adopcion_Compromiso
+
+- story: Rechazar fecha de evento para adoptar
+  steps:
+  - action: utter_Seleccionar_Fecha
+  - intent: Evento_de_Adopcion_NO
+  - action: utter_Confirmacion_Participacion
+  - action: utter_Visita_Refugio
+  - action: utter_Seleccionar_Fecha
+
+- story: Cancelar adopción
+  steps:
+  - action: utter_Seleccionar_Fecha
+  - intent: Evento_de_Adopcion_Cancelar
+  - action: utter_Cancelar

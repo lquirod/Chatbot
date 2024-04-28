@@ -66,6 +66,21 @@ rules:
   - intent: Adios
   - action: utter_Adios
 
+- rule: Responder Si a evento adopción
+  steps:
+  - intent: Evento_de_Adopcion_SI
+  - action: utter_Confirmacion_Participacion
+
+- rule: Responder No a evento adopción
+  steps:
+  - intent: Evento_de_Adopcion_NO
+  - action: utter_No_Evento_Adopcion
+
+- rule: Responder Cancelar a evento adopción
+  steps:
+  - intent: Cancelar
+  - action: utter_Cancelando
+
 - rule: Responder a solicitud de eventos de adopción
   steps:
   - intent: Evento_de_Adopcion

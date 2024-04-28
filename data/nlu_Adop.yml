@@ -12,6 +12,7 @@ nlu:
     - Estoy interesado en [adoptar](adop) un conejo de un centro de rescate
     - ¿Es posible [adoptar](adop) un animal enfermo de un refugio?
     - Quiero [adoptar](adop) una mascota
+    - Adoptar
 
 - lookup: adop
   examples: |
@@ -133,3 +134,15 @@ nlu:
     - Quiero saber la fecha del próximo Evento de Adopción
     - ¿Habrá más Eventos de Adopción próximamente?
 
+- intent: Evento_de_Adopcion_SI
+  examples: "Si"
+
+- intent: Evento_de_Adopcion_NO
+  examples: "No"
+
+- intent: Evento_de_Adopcion_Cancelar
+  examples: "Cancelar"
+
+- regex: year
+  examples: |
+    - \d{2}(?:\d{2})?
