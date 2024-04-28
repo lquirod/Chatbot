@@ -29,3 +29,36 @@ rules:
   steps:
   - intent: Voluntariado_Recaudacion
   - action: utter_voluntariado_recaudacion
+
+#Adoptar
+- rule: Responder a solicitud de adoptar
+  steps:
+  - intent: Adopcion
+  - action: utter_Adopcion_Requisitos
+
+- rule: Responder a solicitud de ayuda
+  steps:
+  - intent: Ayuda
+  - action: utter_Ayuda
+
+- rule: Responder a solicitud de Más Información
+  steps:
+  - intent: MasInformacion
+  - action: utter_Mas_Informacion
+
+- rule: Responder a saludos
+  steps:
+  - intent: Saludos
+  - action: utter_Saludar
+
+- rule: Responder a despedida
+  steps:
+  - intent: Adios
+  - action: utter_Adios
+
+- rule: Responder a solicitud de eventos de adopción
+  steps:
+  - intent: Evento_de_Adopcion
+  - action:
+    - utter_Adopcion_Requisitos
+    - utter_Visita_Refugio
