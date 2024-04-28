@@ -35,3 +35,8 @@ rules:
   - intent: CambiarCantidad
   - action: utter_CambiarCantidad
 
+- rule: El usuario cancela su operación
+  steps:
+  - intent: Cancelar
+  - action: utter_Cancelar
+

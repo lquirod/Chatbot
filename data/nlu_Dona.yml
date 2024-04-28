@@ -100,6 +100,7 @@ nlu:
     - Realizar una [transferencia](transferencia)
     - [transferencia](transferencia)
 
+# Donación material
 - intent: Donacion_Material
     - quiero [donar](donar) [material](material)
     - [donar](donar) [donativo](donativo) [material](material)
@@ -107,11 +108,11 @@ nlu:
     - Realizar una [donar](donar) [material](material)
     - [material](material)
 
-# Operaciones
-- intent: CambiarCantidad
-    - Cambiar [donativo](donativo)
-    - Cambiar importe
-    - Cambiar cantidad de [donativo](donativo)
-    - Modificar [donativo](donativo)
-    - Modificar cantidad de [donativo](donativo)
+# Cantidad de donación
+- intent: Donar_Cantidad
+    - quiero [donar](donar) (5)[cantidad_donacion]
+    - [donar](donar) (20)[cantidad_donacion] [donativo](donativo) [material](material)
+    - [donar](donar) (15)[cantidad_donacion] [material](material)
+    - Realizar una [donar](donar) de (100)[cantidad_donacion]
+    - (10)[cantidad_donacion]
 

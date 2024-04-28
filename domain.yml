@@ -20,6 +20,7 @@ intents:
   - Adoptar
   - Más Informacion
   - Adiós
+  - Cancelar
 
 entities:
   - tipo_voluntariado
@@ -87,6 +88,9 @@ responses:
 
   utter_voluntariado_recaudacion:
   - text: "¡Muchas gracias por tu interés en participar en nuestras actividades de recaudación de fondos! Puedes ayudarnos en la organización de eventos, difusión en redes sociales y captación de donaciones. ¿En qué actividad específica te gustaría colaborar?"
+
+  utter_Cancelando:
+  - text: "Cancelando operación..."
 
 session_config:
   session_expiration_time: 60
