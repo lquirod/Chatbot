@@ -1,4 +1,2174 @@
 {
+  "version": {
+    "name": "Initial Version",
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "63067e968cbdb692c97b063a"
+      }
+    ],
+    "folders": {},
+    "_version": 7.02,
+    "creatorID": 934809,
+    "prototype": {
+      "data": {
+        "name": "Proyecto ICMVA",
+        "locales": [
+          "es-ES"
+        ]
+      },
+      "model": {
+        "intents": [ 
+          {
+            "key": "661a38d06f0af4a38797bc23",
+            "name": "Ayuda",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "Como puedo ayudar?",
+                "slots": []
+              },
+              {
+                "text": "¿Qué puedo hacer?",
+                "slots": []
+              },
+              {
+                "text": "¿Qué hace este bot?",
+                "slots": []
+              },
+              {
+                "text": "¿En qué me puedes ayudar?",
+                "slots": []
+              },
+              {
+                "text": "Estoy perdido, ¿me puedes orientar?",
+                "slots": []
+              },
+              {
+                "text": "¿Cuál es tu función?",
+                "slots": []
+              },
+              {
+                "text": "Estoy teniendo dificultades, ¿me puedes asistir?",
+                "slots": []
+              },
+              {
+                "text": "¿Cómo puedo obtener más información sobre tus funciones?",
+                "slots": []
+              },
+              {
+                "text": "Me siento confundido, ¿me puedes dar información?",
+                "slots": []
+              },
+              {
+                "text": "¿Puedes proporcionar ayuda con problemas técnicos?",
+                "slots": []
+              },
+              {
+                "text": "¿Qué tipo de soporte puedo recibir?",
+                "slots": []
+              },
+              {
+                "text": "¿Cuáles son tus capacidades de asistencia?",
+                "slots": []
+              },
+              {
+                "text": "No sé por dónde empezar, ¿me puedes guiar?",
+                "slots": []
+              },
+              {
+                "text": "¿Puedes explicar qué servicios ofreces?",
+                "slots": []
+              },
+              {
+                "text": "¿Cómo puedo obtener ayuda?",
+                "slots": []
+              },
+              {
+                "text": "Necesito asistencia, ¿puedes ayudarme?",
+                "slots": []
+              }
+            ],
+            "noteID": "5v10d0hee",
+            "description": "Acciones que puede hacer el usuario"
+          },
+          {
+            
+            "noteID": null
+          },
+          {
+            "key": "661a3b7bac2c4721d730752c",
+            "name": "Voluntariado",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "Como puedo hacer un voluntariado",
+                "slots": []
+              },
+              {
+                "text": "QUe voluntariados tienes",
+                "slots": []
+              },
+              {
+                "text": "Como aplico",
+                "slots": []
+              },
+              {
+                "text": "¿Cuáles son los requisitos para participar en un voluntariado?",
+                "slots": []
+              },
+              {
+                "text": "¿Cuál es la duración típica de un voluntariado?",
+                "slots": []
+              },
+              {
+                "text": "¿Dónde puedo encontrar oportunidades de voluntariado?",
+                "slots": []
+              },
+              {
+                "text": "¿Qué tipos de actividades de voluntariado están disponibles?",
+                "slots": []
+              },
+              {
+                "text": "¿Cuál es el proceso de solicitud para ser voluntario?",
+                "slots": []
+              }
+            ],
+            "noteID": null
+          },
+          {
+            "key": "661a3b9aac2c4721d7307535",
+            "name": "Adoptar",
+            "slots": [],
+            "inputs": [
+              
+            ],
+            "noteID": "5v10e0hc9",
+            "description": "Adoptar"
+          },
+
+          },
+
+          {
+           
+           
+          },
+          {
+            "key": "661a44fdac2c4721d7307582",
+            "name": "Eventos",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "¿Habrá algún evento especial pronto?",
+                "slots": []
+              },
+              {
+                "text": "Necesito información sobre los próximos eventos",
+                "slots": []
+              },
+              {
+                "text": "¿Qué eventos están planeados para este mes?",
+                "slots": []
+              },
+              {
+                "text": "Quiero saber si hay algún evento programado",
+                "slots": []
+              },
+              {
+                "text": "¿Cuándo es el próximo evento?",
+                "slots": []
+              }
+            ],
+            "noteID": null
+          },
+          {
+            "key": "661a50466f0af4a38797bd24",
+            "name": "Más Informacion",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "¿Quiénes sois?",
+                "slots": []
+              },
+              {
+                "text": "¿Me das información de la fundación?",
+                "slots": []
+              },
+              {
+                "text": "¿Tiene más información sobre el evento?",
+                "slots": []
+              },
+              {
+                "text": "¿Dónde puedo encontrar más información sobre sus servicios?",
+                "slots": []
+              },
+              {
+                "text": "¿Podría obtener más información de la empresa?",
+                "slots": []
+              },
+              {
+                "text": "¿Cuál es la forma de contacto para obtener más información?",
+                "slots": []
+              },
+              {
+                "text": "¿Puede darme más detalles sobre su equipo?",
+                "slots": []
+              },
+              {
+                "text": "Cómo me pongo en contacto",
+                "slots": []
+              },
+              {
+                "text": "¿Dónde puedo obtener más detalles sobre sus productos?",
+                "slots": []
+              },
+              {
+                "text": "Cual es el horario",
+                "slots": []
+              },
+              {
+                "text": "cuando está abierto",
+                "slots": []
+              },
+              {
+                "text": "cuando puedo ir",
+                "slots": []
+              },
+              {
+                "text": "donde voy",
+                "slots": []
+              },
+              {
+                "text": "¿Cuál es la ubicación exacta?",
+                "slots": []
+              },
+              {
+                "text": "¿Puedo obtener información adicional sobre los precios?",
+                "slots": []
+              },
+              {
+                "text": "¿Hay alguna oferta disponible?",
+                "slots": []
+              },
+              {
+                "text": "¿Cuáles son los métodos de pago aceptados?",
+                "slots": []
+              },
+              {
+                "text": "¿Puedo ver el menú antes de ir?",
+                "slots": []
+              },
+              {
+                "text": "¿Qué servicios adicionales ofrecen?",
+                "slots": []
+              },
+              {
+                "text": "¿Tienen alguna promoción especial próximamente?",
+                "slots": []
+              },
+              {
+                "text": "¿Puedo hacer una reserva con antelación?",
+                "slots": []
+              },
+              {
+                "text": "¿Dónde puedo encontrar opiniones de otros clientes?",
+                "slots": []
+              },
+              {
+                "text": "¿Cuál es la política de devoluciones?",
+                "slots": []
+              }
+            ],
+            "noteID": "5v10g0h4y",
+            "description": "Más Informacion"
+          },
+          {
+            "key": "661a6b3e6f0af4a38797bf26",
+            "name": "RepetirTipoDonación",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "¿Puedes repetir cómo puedo enviar el dinero?",
+                "slots": []
+              },
+              {
+                "text": "¿Podrías decirme otra vez cómo puedo hacer una donación?",
+                "slots": []
+              },
+              {
+                "text": "¿Podrías explicarme de nuevo cómo enviar el dinero?",
+                "slots": []
+              },
+              {
+                "text": "¿Podrías recordarme la forma en que puedo donar?",
+                "slots": []
+              },
+              {
+                "text": "¿Me podrías decir otra vez cómo hacer una contribución?",
+                "slots": []
+              },
+              {
+                "text": "¿Podrías repetir la manera en que puedo hacer un donativo?",
+                "slots": []
+              },
+              {
+                "text": "¿Podrías recordarme cómo puedo contribuir?",
+                "slots": []
+              },
+              {
+                "text": "¿Podrías decirme otra vez cómo enviar la donación?",
+                "slots": []
+              },
+              {
+                "text": "¿Podrías explicarme de nuevo cómo hago para donar?",
+                "slots": []
+              },
+              {
+                "text": "¿Me podrías repetir la forma en que puedo donar?",
+                "slots": []
+              },
+              {
+                "text": "¿Podrías recordarme cómo puedo hacer una donación?",
+                "slots": []
+              }
+            ],
+            "noteID": null
+          },
+          {
+           
+          {
+            "key": "661a9e9b6f0af4a38797c1ec",
+            "name": "Saludos",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "Hola buenas",
+                "slots": []
+              },
+              {
+                "text": "Hola",
+                "slots": []
+              },
+              {
+                "text": "Buenos días",
+                "slots": []
+              },
+              {
+                "text": "Saludos",
+                "slots": []
+              },
+              {
+                "text": "¡Hola, buenos días! ¿Cómo va todo?",
+                "slots": []
+              },
+              {
+                "text": "Saludos, ¿cómo has estado?",
+                "slots": []
+              },
+              {
+                "text": "¡Hola, que tengas un buen día!",
+                "slots": []
+              },
+              {
+                "text": "Hola, amigo",
+                "slots": []
+              },
+              {
+                "text": "Buenas noches",
+                "slots": []
+              },
+              {
+                "text": "¡Hola, buenos días!",
+                "slots": []
+              },
+              {
+                "text": "Saludos cordiales",
+                "slots": []
+              },
+              {
+                "text": "Hola, ¿cómo estás?",
+                "slots": []
+              },
+              {
+                "text": "Buenas tardes",
+                "slots": []
+              },
+              {
+                "text": "¡Hola, qué tal!",
+                "slots": []
+              }
+            ],
+            "noteID": null
+          },
+          {
+            "key": "661a9f156f0af4a38797c1fe",
+            "name": "Adiós",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "Despedida",
+                "slots": []
+              },
+              {
+                "text": "Nada más",
+                "slots": []
+              },
+              {
+                "text": "Adiós",
+                "slots": []
+              },
+              {
+                "text": "Buenas noches",
+                "slots": []
+              },
+              {
+                "text": "Nos despedimos",
+                "slots": []
+              },
+              {
+                "text": "Hasta mañana",
+                "slots": []
+              },
+              {
+                "text": "Adiós amigo",
+                "slots": []
+              },
+              {
+                "text": "Hasta pronto",
+                "slots": []
+              },
+              {
+                "text": "Hasta la vista",
+                "slots": []
+              },
+              {
+                "text": "Chao",
+                "slots": []
+              },
+              {
+                "text": "Nos vemos",
+                "slots": []
+              },
+              {
+                "text": "Hasta luego",
+                "slots": []
+              },
+              {
+                "text": "Adiós, hasta pronto",
+                "slots": []
+              },
+              {
+                "text": "Hasta la próxima vez",
+                "slots": []
+              },
+              {
+                "text": "Adiós, nos vemos",
+                "slots": []
+              }
+            ],
+            "noteID": null
+          },
+          {
+            "key": "capture_Accion_jfbjeadd",
+            "name": "capture_Accion_jfbjeadd",
+            "inputs": [],
+            "slots": [
+              {
+                "id": "661a4e896f0af4a38797bd1f",
+                "required": true,
+                "dialog": {
+                  "prompt": [],
+                  "confirm": [],
+                  "utterances": [
+                    {
+                      "text": "{{[Accion].661a4e896f0af4a38797bd1f}}",
+                      "slots": [
+                        "661a4e896f0af4a38797bd1f"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ]
+          },
+          {
+            "key": "None",
+            "name": "None",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "None"
+              }
+            ],
+            "noteID": null
+          }
+        ],
+        "slots": [
+          {
+            "key": "661a4372ac2c4721d7307579",
+            "name": "Eventos",
+            "color": "#71a4a4",
+            "inputs": [
+              "1",
+              "2",
+              "4"
+            ],
+            "type": {
+              "value": "VF.NUMBER"
+            }
+          },
+          {
+            "key": "661a47826f0af4a38797bcf4",
+            "name": "DonarCantidad",
+            "color": "#56B365",
+            "inputs": [],
+            "type": {
+              "value": "VF.CURRENCY"
+            }
+          },
+          {
+            "key": "661a48d36f0af4a38797bcf6",
+            "name": "DonarTipo",
+            "color": "#56B365",
+            "inputs": [
+              "en efectivo,moneda,billete,monedas,billetes",
+              "transferencia bancaria,transferencia,banco",
+              "por Bizum,bizum,de bizum"
+            ],
+            "type": {
+              "value": "VF.KEY_PHRASE"
+            }
+          },
+          {
+            "key": "661a4e896f0af4a38797bd1f",
+            "name": "Accion",
+            "color": "#5B9FD7",
+            "inputs": [
+              "adoptar,acoger",
+              "información,necesito",
+              "voluntariado,ayudar,presentar",
+              "donación,dar,donar,dinero,material,billete,moneda"
+            ],
+            "type": {
+              "value": "Custom"
+            }
+          }
+        ]
+      },
+      "context": {
+        "stack": [
+          {
+            "programID": "63067e968cbdb692c97b063a",
+            "storage": {},
+            "variables": {},
+            "diagramID": "63067e968cbdb692c97b063a"
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "functionDefinitions": {},
+        "slotsMap": {
+          "661a4372ac2c4721d7307579": {
+            "key": "661a4372ac2c4721d7307579",
+            "name": "Eventos",
+            "color": "#71a4a4",
+            "inputs": [
+              "1",
+              "2",
+              "4"
+            ],
+            "type": {
+              "value": "VF.NUMBER"
+            }
+          },
+          "661a47826f0af4a38797bcf4": {
+            "key": "661a47826f0af4a38797bcf4",
+            "name": "DonarCantidad",
+            "color": "#56B365",
+            "inputs": [],
+            "type": {
+              "value": "VF.CURRENCY"
+            }
+          },
+          "661a48d36f0af4a38797bcf6": {
+            "key": "661a48d36f0af4a38797bcf6",
+            "name": "DonarTipo",
+            "color": "#56B365",
+            "inputs": [
+              "en efectivo,moneda,billete,monedas,billetes",
+              "transferencia bancaria,transferencia,banco",
+              "por Bizum,bizum,de bizum"
+            ],
+            "type": {
+              "value": "VF.KEY_PHRASE"
+            }
+          },
+          "661a4e896f0af4a38797bd1f": {
+            "key": "661a4e896f0af4a38797bd1f",
+            "name": "Accion",
+            "color": "#5B9FD7",
+            "inputs": [
+              "adoptar,acoger",
+              "información,necesito",
+              "voluntariado,ayudar,presentar",
+              "donación,dar,donar,dinero,material,billete,moneda"
+            ],
+            "type": {
+              "value": "Custom"
+            }
+          }
+        },
+        "platform": "webchat",
+        "products": {},
+        "extraSlots": [],
+        "interfaces": [],
+        "permissions": [],
+        "extraIntents": [
+          {
+            "key": "capture_Accion_jfbjeadd",
+            "name": "capture_Accion_jfbjeadd",
+            "inputs": [],
+            "slots": [
+              {
+                "id": "661a4e896f0af4a38797bd1f",
+                "required": true,
+                "dialog": {
+                  "prompt": [],
+                  "confirm": [],
+                  "utterances": [
+                    {
+                      "text": "{{[Accion].661a4e896f0af4a38797bd1f}}",
+                      "slots": [
+                        "661a4e896f0af4a38797bd1f"
+                      ]
+                    }
+                  ],
+                  "confirmEnabled": false
+                }
+              }
+            ]
+          }
+        ],
+        "usedEventsSet": [],
+        "usedIntentsSet": [
+          "661a40a96f0af4a38797bca7",
+          "661a41906f0af4a38797bcaf",
+          "661a82f76f0af4a38797c05d",
+          "661a3f106f0af4a38797bc8b",
+          "661a3f346f0af4a38797bc94",
+          "661a3fe96f0af4a38797bc9c",
+          "661a6b3e6f0af4a38797bf26",
+          "661a83b56f0af4a38797c069",
+          "661a44fdac2c4721d7307582",
+          "capture_Accion_jfbjeadd",
+          "661a38d06f0af4a38797bc23",
+          "661a3b51ac2c4721d7307523",
+          "661a3b7bac2c4721d730752c",
+          "661a3b9aac2c4721d7307535",
+          "661a50466f0af4a38797bd24",
+          "661a9e9b6f0af4a38797c1ec",
+          "661a9f156f0af4a38797c1fe"
+        ],
+        "goToIntentsSet": [],
+        "cmsVariables": {
+          "lvento_seleccionado": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "evento_seleccionado": {
+            "isSystem": false,
+            "defaultValue": "",
+            "datatype": "any",
+            "isArray": false
+          },
+          "NameCompany": {
+            "isSystem": false,
+            "defaultValue": "AyudaPet",
+            "datatype": "any",
+            "isArray": false
+          },
+          "Eventos_Prueba": {
+            "isSystem": false,
+            "defaultValue": "Evento 1",
+            "datatype": "any",
+            "isArray": false
+          },
+          "nombreVoluntario": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "edad_voluntariado": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "telefono_voluntario": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "email_voluntario": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "AccionDonar": {
+            "isSystem": false,
+            "defaultValue": "donar",
+            "datatype": "any",
+            "isArray": false
+          },
+          "evento_prueba": {
+            "isSystem": false,
+            "defaultValue": "EventID|EventName (Date)|Description --- 1|Conference on Technology (April 20th)|This is a conference... 2|Cooking Workshop (May 1st)|Learn to cook delicious meals...",
+            "datatype": "any",
+            "isArray": false
+          },
+          "FundacionDireccion": {
+            "isSystem": false,
+            "defaultValue": "Camino de la Aurora, 5, CP 18330, Granada",
+            "datatype": "any",
+            "isArray": false
+          },
+          "FundaciopnTlfno": {
+            "isSystem": false,
+            "defaultValue": "+34 685 650 558",
+            "datatype": "any",
+            "isArray": false
+          },
+          "fec": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "isValidDate": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "sessions": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "locale": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "vf_chunks": {
+            "isSystem": true,
+            "defaultValue": null
+          }
+        }
+      },
+      "settings": {},
+      "platform": "webchat",
+      "type": "chat"
+    },
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory",
+      "vf_chunks",
+      "NameCompany",
+      "lvento_seleccionado",
+      "evento_seleccionado",
+      "Eventos_Prueba",
+      "nombreVoluntario",
+      "edad_voluntariado",
+      "telefono_voluntario",
+      "email_voluntario",
+      "AccionDonar",
+      "evento_prueba",
+      "FundacionDireccion",
+      "FundaciopnTlfno",
+      "fechas_disponibles",
+      "fec",
+      "isValidDate"
+    ],
+    "components": [],
+    "manualSave": false,
+    "platformData": {
+      "slots": [
+        {
+          "key": "661a4372ac2c4721d7307579",
+          "name": "Eventos",
+          "color": "#71a4a4",
+          "inputs": [
+            "1",
+            "2",
+            "4"
+          ],
+          "type": {
+            "value": "VF.NUMBER"
+          }
+        },
+        {
+          "key": "661a47826f0af4a38797bcf4",
+          "name": "DonarCantidad",
+          "color": "#56B365",
+          "inputs": [],
+          "type": {
+            "value": "VF.CURRENCY"
+          }
+        },
+        {
+          "key": "661a48d36f0af4a38797bcf6",
+          "name": "DonarTipo",
+          "color": "#56B365",
+          "inputs": [
+            "en efectivo,moneda,billete,monedas,billetes",
+            "transferencia bancaria,transferencia,banco",
+            "por Bizum,bizum,de bizum"
+          ],
+          "type": {
+            "value": "VF.KEY_PHRASE"
+          }
+        },
+        {
+          "key": "661a4e896f0af4a38797bd1f",
+          "name": "Accion",
+          "color": "#5B9FD7",
+          "inputs": [
+            "adoptar,acoger",
+            "información,necesito",
+            "voluntariado,ayudar,presentar",
+            "donación,dar,donar,dinero,material,billete,moneda"
+          ],
+          "type": {
+            "value": "Custom"
+          }
+        }
+      ],
+      "intents": [
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        },
+        {
+          "key": "661a3740ac2c4721d7307504",
+          "name": "Servicios",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "",
+              "slots": []
+            },
+            {
+              "text": "Quiero donar",
+              "slots": []
+            },
+            {
+              "text": "Voluntariado",
+              "slots": []
+            },
+            {
+              "text": "apadrinar un niño",
+              "slots": []
+            },
+            {
+              "text": "Como puedo ayudar?",
+              "slots": []
+            },
+            {
+              "text": "¿Hay oportunidades de voluntariado en el extranjero?",
+              "slots": []
+            },
+            {
+              "text": "Estoy interesado en conocer los servicios disponibles para donar",
+              "slots": []
+            },
+            {
+              "text": "¿Cómo puedo colaborar con mis habilidades?",
+              "slots": []
+            },
+            {
+              "text": "Quiero ofrecerme como voluntario",
+              "slots": []
+            },
+            {
+              "text": "Necesito información sobre programas de apadrinamiento",
+              "slots": []
+            },
+            {
+              "text": "Quiero participar en actividades de concienciación sobre causas sociales",
+              "slots": []
+            },
+            {
+              "text": "¿Cómo puedo ayudar en la recaudación de fondos?",
+              "slots": []
+            },
+            {
+              "text": "Estoy interesado en conocer los servicios disponibles para realizar donaciones mensuales",
+              "slots": []
+            },
+            {
+              "text": "¿Cuáles son los requisitos para ser voluntario en emergencias?",
+              "slots": []
+            },
+            {
+              "text": "Quiero saber más sobre los programas de ayuda humanitaria",
+              "slots": []
+            },
+            {
+              "text": "Necesito información sobre oportunidades de voluntariado para jóvenes",
+              "slots": []
+            },
+            {
+              "text": "¿Cómo puedo ayudar en proyectos de construcción?",
+              "slots": []
+            },
+            {
+              "text": "Estoy interesado en los programas de servicio comunitario",
+              "slots": []
+            },
+            {
+              "text": "Quiero saber cómo puedo donar materiales o suministros",
+              "slots": []
+            },
+            {
+              "text": "¿Hay formas de colaborar a distancia?",
+              "slots": []
+            },
+            {
+              "text": "¿Cuáles son las oportunidades de voluntariado disponibles?",
+              "slots": []
+            },
+            {
+              "text": "¿Dónde puedo encontrar información sobre servicios de asesoramiento?",
+              "slots": []
+            },
+            {
+              "text": "Estoy buscando maneras de involucrarme en actividades de ayuda social",
+              "slots": []
+            },
+            {
+              "text": "¿Hay oportunidades para trabajar en programas de ayuda alimentaria?",
+              "slots": []
+            },
+            {
+              "text": "Quiero saber más sobre los servicios de apoyo a personas mayores",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a38d06f0af4a38797bc23",
+          "name": "Ayuda",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Como puedo ayudar?",
+              "slots": []
+            },
+            {
+              "text": "¿Qué puedo hacer?",
+              "slots": []
+            },
+            {
+              "text": "¿Qué hace este bot?",
+              "slots": []
+            },
+            {
+              "text": "¿En qué me puedes ayudar?",
+              "slots": []
+            },
+            {
+              "text": "Estoy perdido, ¿me puedes orientar?",
+              "slots": []
+            },
+            {
+              "text": "¿Cuál es tu función?",
+              "slots": []
+            },
+            {
+              "text": "Estoy teniendo dificultades, ¿me puedes asistir?",
+              "slots": []
+            },
+            {
+              "text": "¿Cómo puedo obtener más información sobre tus funciones?",
+              "slots": []
+            },
+            {
+              "text": "Me siento confundido, ¿me puedes dar información?",
+              "slots": []
+            },
+            {
+              "text": "¿Puedes proporcionar ayuda con problemas técnicos?",
+              "slots": []
+            },
+            {
+              "text": "¿Qué tipo de soporte puedo recibir?",
+              "slots": []
+            },
+            {
+              "text": "¿Cuáles son tus capacidades de asistencia?",
+              "slots": []
+            },
+            {
+              "text": "No sé por dónde empezar, ¿me puedes guiar?",
+              "slots": []
+            },
+            {
+              "text": "¿Puedes explicar qué servicios ofreces?",
+              "slots": []
+            },
+            {
+              "text": "¿Cómo puedo obtener ayuda?",
+              "slots": []
+            },
+            {
+              "text": "Necesito asistencia, ¿puedes ayudarme?",
+              "slots": []
+            }
+          ],
+          "noteID": "5v10d0hee",
+          "description": "Acciones que puede hacer el usuario"
+        },
+        {
+          "key": "661a3b51ac2c4721d7307523",
+          "name": "Donación",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Realizar donación",
+              "slots": []
+            },
+            {
+              "text": "Realizar una aportación",
+              "slots": []
+            },
+            {
+              "text": "quiero Donar",
+              "slots": []
+            },
+            {
+              "text": "Aportar fondos",
+              "slots": []
+            },
+            {
+              "text": "Entregar donativos",
+              "slots": []
+            },
+            {
+              "text": "Realizar contribuciones",
+              "slots": []
+            },
+            {
+              "text": "Hacer donaciones",
+              "slots": []
+            },
+            {
+              "text": "Quiero donar",
+              "slots": []
+            },
+            {
+              "text": "Colaborar con aportes ",
+              "slots": []
+            },
+            {
+              "text": "Dar donativos",
+              "slots": []
+            },
+            {
+              "text": "Contribuir con donaciones",
+              "slots": []
+            },
+            {
+              "text": "Donar",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a3b7bac2c4721d730752c",
+          "name": "Voluntariado",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Como puedo hacer un voluntariado",
+              "slots": []
+            },
+            {
+              "text": "QUe voluntariados tienes",
+              "slots": []
+            },
+            {
+              "text": "Como aplico",
+              "slots": []
+            },
+            {
+              "text": "¿Cuáles son los requisitos para participar en un voluntariado?",
+              "slots": []
+            },
+            {
+              "text": "¿Cuál es la duración típica de un voluntariado?",
+              "slots": []
+            },
+            {
+              "text": "¿Dónde puedo encontrar oportunidades de voluntariado?",
+              "slots": []
+            },
+            {
+              "text": "¿Qué tipos de actividades de voluntariado están disponibles?",
+              "slots": []
+            },
+            {
+              "text": "¿Cuál es el proceso de solicitud para ser voluntario?",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a3b9aac2c4721d7307535",
+          "name": "Adoptar",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Deseo adoptar un perro de un refugio",
+              "slots": []
+            },
+            {
+              "text": "¿Cómo puedo adoptar un gato de la protectora?",
+              "slots": []
+            },
+            {
+              "text": "Quiero adoptar un animal de compañía",
+              "slots": []
+            },
+            {
+              "text": "¿Es posible adoptar un animal en situación de abandono?",
+              "slots": []
+            },
+            {
+              "text": "¿Es complicado adoptar un perro de la perrera?",
+              "slots": []
+            },
+            {
+              "text": "Quisiera adoptar un gatito de la calle",
+              "slots": []
+            },
+            {
+              "text": "¿Cuáles son los requisitos para adoptar un animal abandonado?",
+              "slots": []
+            },
+            {
+              "text": "Estoy interesado en adoptar un conejo de un centro de rescate",
+              "slots": []
+            },
+            {
+              "text": "¿Es posible adoptar un animal enfermo de un refugio?",
+              "slots": []
+            },
+            {
+              "text": "Quiero adoptar una mascota",
+              "slots": []
+            }
+          ],
+          "noteID": "5v10e0hc9",
+          "description": "Adoptar"
+        },
+        {
+          "key": "661a3e07ac2c4721d730753b",
+          "name": "Actividad de Recaudación",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Recaudación de fondos",
+              "slots": []
+            },
+            {
+              "text": "Ayuda en la recaudación de donativos",
+              "slots": []
+            },
+            {
+              "text": "Iniciativa de recaudación de recursos",
+              "slots": []
+            },
+            {
+              "text": "Evento para la recaudación de fondos",
+              "slots": []
+            },
+            {
+              "text": "Campaña de recaudación benéfica",
+              "slots": []
+            },
+            {
+              "text": "Acto solidario de recaudación",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a3e28ac2c4721d7307542",
+          "name": "Evento de Adopción",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Eventos de Adopción",
+              "slots": []
+            },
+            {
+              "text": "¿Es necesario registrarse para participar en un Evento de Adopción?",
+              "slots": []
+            },
+            {
+              "text": "Estoy interesado en asistir a un Evento de Adopción, ¿dónde puedo obtener más información?",
+              "slots": []
+            },
+            {
+              "text": "¿Qué tipo de mascotas estarán disponibles en el Evento de Adopción?",
+              "slots": []
+            },
+            {
+              "text": "Quiero saber la fecha del próximo Evento de Adopción",
+              "slots": []
+            },
+            {
+              "text": "¿Habrá más Eventos de Adopción próximamente?",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a3f106f0af4a38797bc8b",
+          "name": "Transferencia bancaria",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Quiero hacer una transferencia bancaria",
+              "slots": []
+            },
+            {
+              "text": "Quisiera realizar una transferencia electrónica",
+              "slots": []
+            },
+            {
+              "text": "Por el banco",
+              "slots": []
+            },
+            {
+              "text": "Por transferencia",
+              "slots": []
+            },
+            {
+              "text": "Necesito transferir dinero a otra cuenta",
+              "slots": []
+            },
+            {
+              "text": "Realizaré una transferencia interbancaria",
+              "slots": []
+            },
+            {
+              "text": "Me gustaría enviar dinero por transferencia",
+              "slots": []
+            },
+            {
+              "text": "Quiero hacer una transferencia de fondos",
+              "slots": []
+            },
+            {
+              "text": "Por favor, quiero realizar una transferencia bancaria",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a3f346f0af4a38797bc94",
+          "name": "Bizum",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "donar por bizum",
+              "slots": []
+            },
+            {
+              "text": "Pagar con Bizum en esta tienda",
+              "slots": []
+            },
+            {
+              "text": "Enviar dinero con Bizum",
+              "slots": []
+            },
+            {
+              "text": "Pagar con Bizum en tiendas y comercios",
+              "slots": []
+            },
+            {
+              "text": "Bizum para empezar a transferir dinero",
+              "slots": []
+            },
+            {
+              "text": "Con Bizum puedes transferir dinero de forma rápida",
+              "slots": []
+            },
+            {
+              "text": "Realizar transacciones seguras con Bizum",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a3fe96f0af4a38797bc9c",
+          "name": "Efectivo",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Quiero donar dinero",
+              "slots": []
+            },
+            {
+              "text": "Cómo puedo enviar dinero",
+              "slots": []
+            },
+            {
+              "text": "Ayudar monetariamente",
+              "slots": []
+            },
+            {
+              "text": "Quiero hacer una contribución monetaria",
+              "slots": []
+            },
+            {
+              "text": "Me gustaría hacer una donación en efectivo",
+              "slots": []
+            },
+            {
+              "text": "¿Dónde puedo entregar dinero en efectivo?",
+              "slots": []
+            },
+            {
+              "text": "Quiero hacer una donación en efectivo",
+              "slots": []
+            },
+            {
+              "text": "Necesito enviar dinero en efectivo",
+              "slots": []
+            },
+            {
+              "text": "Hacer una donación en efectivo",
+              "slots": []
+            }
+          ],
+          "noteID": "5v10f0hfh",
+          "description": "Quiero donar dinero"
+        },
+        {
+          "key": "661a40a96f0af4a38797bca7",
+          "name": "Donación monetaria",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Monetaria",
+              "slots": []
+            },
+            {
+              "text": "Donacion economica",
+              "slots": []
+            },
+            {
+              "text": "Economica",
+              "slots": []
+            },
+            {
+              "text": "Necesito información sobre cómo donar dinero",
+              "slots": []
+            },
+            {
+              "text": "Estoy interesado en donar fondos",
+              "slots": []
+            },
+            {
+              "text": "Deseo contribuir con una donación de dinero",
+              "slots": []
+            },
+            {
+              "text": "Quiero hacer una donación monetaria",
+              "slots": []
+            },
+            {
+              "text": "Donar dinero",
+              "slots": []
+            },
+            {
+              "text": "Quiero donar dinero",
+              "slots": []
+            },
+            {
+              "text": "Donar dinero",
+              "slots": []
+            },
+            {
+              "text": "Me gustaría realizar una donación económica",
+              "slots": []
+            },
+            {
+              "text": "Estoy pensando en donar dinero",
+              "slots": []
+            },
+            {
+              "text": "Quiero apoyar con una contribución monetaria",
+              "slots": []
+            },
+            {
+              "text": "Estoy buscando la forma de donar fondos",
+              "slots": []
+            },
+            {
+              "text": "Estoy considerando hacer una donación de dinero",
+              "slots": []
+            },
+            {
+              "text": "Donación monetaria",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a41906f0af4a38797bcaf",
+          "name": "Donación material",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "donar materiales",
+              "slots": []
+            },
+            {
+              "text": "Estoy interesado en donar material, ¿cómo puedo hacerlo?",
+              "slots": []
+            },
+            {
+              "text": "Quiero hacer una donación de material",
+              "slots": []
+            },
+            {
+              "text": "Quiero donar comida",
+              "slots": []
+            },
+            {
+              "text": "comida",
+              "slots": []
+            },
+            {
+              "text": "alimentos",
+              "slots": []
+            },
+            {
+              "text": "Quiero donar alimentos no perecederos",
+              "slots": []
+            },
+            {
+              "text": "Donar alimentos",
+              "slots": []
+            },
+            {
+              "text": "Donar alimentos para animales",
+              "slots": []
+            },
+            {
+              "text": "donar recursos ",
+              "slots": []
+            },
+            {
+              "text": "Quiero donar ropa y juguetes",
+              "slots": []
+            },
+            {
+              "text": "Donar suministros médicos",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a44fdac2c4721d7307582",
+          "name": "Eventos ",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "",
+              "slots": []
+            },
+            {
+              "text": "¿Habrá algún evento especial pronto?",
+              "slots": []
+            },
+            {
+              "text": "Necesito información sobre los próximos eventos",
+              "slots": []
+            },
+            {
+              "text": "¿Qué eventos están planeados para este mes?",
+              "slots": []
+            },
+            {
+              "text": "Quiero saber si hay algún evento programado",
+              "slots": []
+            },
+            {
+              "text": "¿Cuándo es el próximo evento?",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a50466f0af4a38797bd24",
+          "name": "Más Informacion",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "¿Quiénes sois?",
+              "slots": []
+            },
+            {
+              "text": "¿Me das información de la fundación?",
+              "slots": []
+            },
+            {
+              "text": "¿Tiene más información sobre el evento?",
+              "slots": []
+            },
+            {
+              "text": "¿Dónde puedo encontrar más información sobre sus servicios?",
+              "slots": []
+            },
+            {
+              "text": "¿Podría obtener más información de la empresa?",
+              "slots": []
+            },
+            {
+              "text": "¿Cuál es la forma de contacto para obtener más información?",
+              "slots": []
+            },
+            {
+              "text": "¿Puede darme más detalles sobre su equipo?",
+              "slots": []
+            },
+            {
+              "text": "Cómo me pongo en contacto",
+              "slots": []
+            },
+            {
+              "text": "¿Dónde puedo obtener más detalles sobre sus productos?",
+              "slots": []
+            },
+            {
+              "text": "Cual es el horario",
+              "slots": []
+            },
+            {
+              "text": "cuando está abierto",
+              "slots": []
+            },
+            {
+              "text": "cuando puedo ir",
+              "slots": []
+            },
+            {
+              "text": "donde voy",
+              "slots": []
+            },
+            {
+              "text": "¿Cuál es la ubicación exacta?",
+              "slots": []
+            },
+            {
+              "text": "¿Puedo obtener información adicional sobre los precios?",
+              "slots": []
+            },
+            {
+              "text": "¿Hay alguna oferta disponible?",
+              "slots": []
+            },
+            {
+              "text": "¿Cuáles son los métodos de pago aceptados?",
+              "slots": []
+            },
+            {
+              "text": "¿Puedo ver el menú antes de ir?",
+              "slots": []
+            },
+            {
+              "text": "¿Qué servicios adicionales ofrecen?",
+              "slots": []
+            },
+            {
+              "text": "¿Tienen alguna promoción especial próximamente?",
+              "slots": []
+            },
+            {
+              "text": "¿Puedo hacer una reserva con antelación?",
+              "slots": []
+            },
+            {
+              "text": "¿Dónde puedo encontrar opiniones de otros clientes?",
+              "slots": []
+            },
+            {
+              "text": "¿Cuál es la política de devoluciones?",
+              "slots": []
+            }
+          ],
+          "noteID": "5v10g0h4y",
+          "description": "Más Informacion"
+        },
+        {
+          "key": "661a5a3eac2c4721d7307698",
+          "name": "Test 2",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "",
+              "slots": []
+            },
+            {
+              "text": "¿Cuál es el propósito del Test 2?",
+              "slots": []
+            },
+            {
+              "text": "Necesito más información sobre el Test 2",
+              "slots": []
+            },
+            {
+              "text": "¿Cómo puedo completar el Test 2?",
+              "slots": []
+            },
+            {
+              "text": "Puedes ayudarme con el Test 2",
+              "slots": []
+            },
+            {
+              "text": "Quiero hacer el Test 2",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a67f5ac2c4721d73076fc",
+          "name": "Evento Abril 1",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "",
+              "slots": []
+            },
+            {
+              "text": "",
+              "slots": []
+            },
+            {
+              "text": "¿Hay algún evento especial el 1 de abril?",
+              "slots": []
+            },
+            {
+              "text": "Dime qué está planeado para el 1 de abril",
+              "slots": []
+            },
+            {
+              "text": "Quiero saber qué actividades hay el 1 de abril",
+              "slots": []
+            },
+            {
+              "text": "¿Qué eventos hay programados para el 1 de abril?",
+              "slots": []
+            },
+            {
+              "text": "¿Cuál es el evento del 1 de abril?",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a6803ac2c4721d7307707",
+          "name": "Evento Abril 2",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "",
+              "slots": []
+            },
+            {
+              "text": "¿Hay algo planeado para el 2 de abril?",
+              "slots": []
+            },
+            {
+              "text": "¿Cuál es la agenda de eventos para el 2 de abril?",
+              "slots": []
+            },
+            {
+              "text": "Me gustaría saber si hay algún acontecimiento importante el 2 de abril",
+              "slots": []
+            },
+            {
+              "text": "¿Qué eventos están programados para el 2 de abril?",
+              "slots": []
+            },
+            {
+              "text": "¿Habrá algún evento especial el 2 de abril?",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a6b3e6f0af4a38797bf26",
+          "name": "RepetirTipoDonación",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "¿Puedes repetir cómo puedo enviar el dinero?",
+              "slots": []
+            },
+            {
+              "text": "¿Podrías decirme otra vez cómo puedo hacer una donación?",
+              "slots": []
+            },
+            {
+              "text": "¿Podrías explicarme de nuevo cómo enviar el dinero?",
+              "slots": []
+            },
+            {
+              "text": "¿Podrías recordarme la forma en que puedo donar?",
+              "slots": []
+            },
+            {
+              "text": "¿Me podrías decir otra vez cómo hacer una contribución?",
+              "slots": []
+            },
+            {
+              "text": "¿Podrías repetir la manera en que puedo hacer un donativo?",
+              "slots": []
+            },
+            {
+              "text": "¿Podrías recordarme cómo puedo contribuir?",
+              "slots": []
+            },
+            {
+              "text": "¿Podrías decirme otra vez cómo enviar la donación?",
+              "slots": []
+            },
+            {
+              "text": "¿Podrías explicarme de nuevo cómo hago para donar?",
+              "slots": []
+            },
+            {
+              "text": "¿Me podrías repetir la forma en que puedo donar?",
+              "slots": []
+            },
+            {
+              "text": "¿Podrías recordarme cómo puedo hacer una donación?",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a822dac2c4721d730777b",
+          "name": "Si/No",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Sí",
+              "slots": []
+            },
+            {
+              "text": "No",
+              "slots": []
+            },
+            {
+              "text": "Sí, definitivamente",
+              "slots": []
+            },
+            {
+              "text": "No, lo siento",
+              "slots": []
+            },
+            {
+              "text": "Sí, por supuesto",
+              "slots": []
+            },
+            {
+              "text": "Por supuesto",
+              "slots": []
+            },
+            {
+              "text": "Claro",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a82f76f0af4a38797c05d",
+          "name": "Cancelar",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "",
+              "slots": []
+            },
+            {
+              "text": "¿Cómo puedo detener esta transacción?",
+              "slots": []
+            },
+            {
+              "text": "Cancelar esta acción",
+              "slots": []
+            },
+            {
+              "text": "Deseo anular la operación que acabo de iniciar",
+              "slots": []
+            },
+            {
+              "text": "No quiero seguir con la transacción",
+              "slots": []
+            },
+            {
+              "text": "Quiero cancelar la operación",
+              "slots": []
+            },
+            {
+              "text": "¿Cómo puedo detener esta operación?",
+              "slots": []
+            },
+            {
+              "text": "Cancelar este proceso",
+              "slots": []
+            },
+            {
+              "text": "Quiero anular la operación en curso",
+              "slots": []
+            },
+            {
+              "text": "No deseo continuar con esta transacción",
+              "slots": []
+            },
+            {
+              "text": "Prefiero cancelar la operación",
+              "slots": []
+            },
+            {
+              "text": "parar operacion",
+              "slots": []
+            },
+            {
+              "text": "No quiero seguir",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a83b56f0af4a38797c069",
+          "name": "CambiarCantidad",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Cambiar el dinero",
+              "slots": []
+            },
+            {
+              "text": "Cambiar la cantidad de donacion",
+              "slots": []
+            },
+            {
+              "text": "Modificar la cantidad",
+              "slots": []
+            },
+            {
+              "text": "Cambiar el importe",
+              "slots": []
+            },
+            {
+              "text": "Modificar el monto",
+              "slots": []
+            },
+            {
+              "text": "Editar la cantidad",
+              "slots": []
+            },
+            {
+              "text": "Cambiar la cantidad de producto",
+              "slots": []
+            },
+            {
+              "text": "Modificar la cifra",
+              "slots": []
+            },
+            {
+              "text": "Variar el importe",
+              "slots": []
+            },
+            {
+              "text": "Actualizar la cantidad",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a9e9b6f0af4a38797c1ec",
+          "name": "Saludos",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Hola buenas",
+              "slots": []
+            },
+            {
+              "text": "Hola",
+              "slots": []
+            },
+            {
+              "text": "Buenos días",
+              "slots": []
+            },
+            {
+              "text": "Saludos",
+              "slots": []
+            },
+            {
+              "text": "¡Hola, buenos días! ¿Cómo va todo?",
+              "slots": []
+            },
+            {
+              "text": "Saludos, ¿cómo has estado?",
+              "slots": []
+            },
+            {
+              "text": "¡Hola, que tengas un buen día!",
+              "slots": []
+            },
+            {
+              "text": "Hola, amigo",
+              "slots": []
+            },
+            {
+              "text": "Buenas noches",
+              "slots": []
+            },
+            {
+              "text": "¡Hola, buenos días!",
+              "slots": []
+            },
+            {
+              "text": "Saludos cordiales",
+              "slots": []
+            },
+            {
+              "text": "Hola, ¿cómo estás?",
+              "slots": []
+            },
+            {
+              "text": "Buenas tardes",
+              "slots": []
+            },
+            {
+              "text": "¡Hola, qué tal!",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        },
+        {
+          "key": "661a9f156f0af4a38797c1fe",
+          "name": "Adiós",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Despedida",
+              "slots": []
+            },
+            {
+              "text": "Nada más",
+              "slots": []
+            },
+            {
+              "text": "Adiós",
+              "slots": []
+            },
+            {
+              "text": "Buenas noches",
+              "slots": []
+            },
+            {
+              "text": "Nos despedimos",
+              "slots": []
+            },
+            {
+              "text": "Hasta mañana",
+              "slots": []
+            },
+            {
+              "text": "Adiós amigo",
+              "slots": []
+            },
+            {
+              "text": "Hasta pronto",
+              "slots": []
+            },
+            {
+              "text": "Hasta la vista",
+              "slots": []
+            },
+            {
+              "text": "Chao",
+              "slots": []
+            },
+            {
+              "text": "Nos vemos",
+              "slots": []
+            },
+            {
+              "text": "Hasta luego",
+              "slots": []
+            },
+            {
+              "text": "Adiós, hasta pronto",
+              "slots": []
+            },
+            {
+              "text": "Hasta la próxima vez",
+              "slots": []
+            },
+            {
+              "text": "Adiós, nos vemos",
+              "slots": []
+            }
+          ],
+          "noteID": null
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "es-ES"
+        ],
+        "defaultVoice": "Conchita",
+        "defaultCanvasNodeVisibility": "all-variants"
+      },
+      "publishing": {},
+      "platform": "webchat"
+    },
+    "autoSaveFromRestore": false,
+    "canvasTemplates": [
+      {
+        "id": "ehlgg3bkb",
+        "name": "Volver Menu Voluntariado",
+        "color": "#56b365",
+        "nodeIDs": [
+          "661a6fb2c1e7fe1b2dc8f113",
+          "661a6fb2c1e7fe1b2dc8f11b"
+        ]
+      },
+      {
+        "id": "nu65q3c5m",
+        "name": "Validar Sí/No",
+        "color": "#dc8879",
+        "nodeIDs": [
+          "661a95f77d751a687c54cacf",
+          "661a95f77d751a687c54cad9"
+        ]
+      },
+      {
+        "id": "4i8av3cho",
+        "name": "Seleccionar fecha",
+        "color": null,
+        "nodeIDs": [
+          "661a99907d751a687c54d143",
+          "661a99907d751a687c54d145",
+          "661a99907d751a687c54d147",
+          "661a99907d751a687c54d149",
+          "661a99907d751a687c54d14b"
+        ]
+      }
+    ],
+    "_id": "66159ac4264e736224ee6425",
+    "updatedAt": "2024-04-27T07:58:12.788Z",
+    "domains": [
+      {
+        "id": "clussjj0513jp07n0fetkflr2",
+        "name": "Fundación",
+        "live": true,
+        "topicIDs": [
+          "63067e968cbdb692c97b063a",
+          "661a87db6d710c434c153521",
+          "661a88ab850d27c7403a84da",
+          "661a8966850d27c7403a84db"
+        ],
+        "rootDiagramID": "63067e968cbdb692c97b063a",
+        "updatedBy": 934811,
+        "updatedAt": "2024-04-27T08:25:04.549Z"
+      }
+    ],
+    "projectID": "66159ac4264e736224ee6424",
+    "rootDiagramID": "63067e968cbdb692c97b063a",
+    "templateDiagramID": "661a6fb2850d27c7403a84d3"
+  },
   "diagrams": {
     
     "63067e968cbdb692c97b063a": {

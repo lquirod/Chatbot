@@ -34,6 +34,11 @@ rules:
   steps:
   - intent: CambiarCantidad
   - action: utter_CambiarCantidad
+  
+- rule: El usuario cancela su operación
+  steps:
+  - intent: Cancelar
+  - action: utter_Cancelar
 
 #Adoptar
 - rule: Responder a solicitud de adoptar
