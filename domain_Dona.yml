@@ -39,15 +39,15 @@ responses:
 
   utter_Bizum:
   - text: |
-    Perfecto, para poder enviarnos la donación mediante bizum hágalo a nuestro teléfono {FundaciopnTlfno} con el asunto "Donación {NameCompany}".
+    Perfecto, para poder enviarnos la donación mediante bizum hágalo a nuestro teléfono {+34 685650558} con el asunto "Donación NameCompany".
 
   utter_Efectivo:
   - text: |
-    Si prefieres entregar tu donación en efectivo en nuestras oficinas, nuestro equipo estará encantado de recibirte y agradecerte personalmente por tu apoyo. Recibirás un comprobante de la donación realizada. Por favor, consulta nuestros horarios de atención y asegúrate de planificar tu visita. Te esperamos en {FundacionDireccion}
+    Si prefieres entregar tu donación en efectivo en nuestras oficinas, nuestro equipo estará encantado de recibirte y agradecerte personalmente por tu apoyo. Recibirás un comprobante de la donación realizada. Por favor, consulta nuestros horarios de atención y asegúrate de planificar tu visita. Te esperamos en Camino de la Aurora, 5, CP 18330, Granada
 
   utter_Transferencia_bancaria:
   - text: |
-    Para realizar una donación por transferencia bancaria, ingrese su donación con el asunto: 'Donación {NameCompany}' en la siguiente cuenta: "IBAN ES70 1234 1234 0101 2345 6789"
+    Para realizar una donación por transferencia bancaria, ingrese su donación con el asunto: 'Donación NameCompany' en la siguiente cuenta: "IBAN ES70 1234 1234 0101 2345 6789"
 
   utter_Donacion_Material:
   - text:  |
@@ -55,8 +55,8 @@ responses:
 
     Te explicamos cómo puedes contribuir y realizar la entrega personal o a traves de envios a nuestras oficinas:
       - Asegúrate de empaquetarlos de manera segura para evitar daños durante el transporte.
-      - Nuestra dirección es "{FundacionDireccion}", estaremos encantados de atenderte.
-      - Puedes contactar con nosotros a través de nuestro teléfono {FundaciopnTlfno}
+      - Nuestra dirección es "Camino de la Aurora, 5, CP 18330, Granada", estaremos encantados de atenderte.
+      - Puedes contactar con nosotros a través de nuestro teléfono {+34 685650558}
 
     Si lo deseas, te animamos a revisar nuestra lista de necesidades prioritarias. Esto nos ayuda a garantizar que recibamos los materiales más necesarios en el momento adecuado. Puedes mirarlo en nuestra web www.refugioanimal.com/nr¡ecesidades
 

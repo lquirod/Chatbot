@@ -739,7 +739,7 @@
             "datatype": "any",
             "isArray": false
           },
-          "FundaciopnTlfno": {
+          "+34 685650558": {
             "isSystem": false,
             "defaultValue": "+34 685 650 558",
             "datatype": "any",
@@ -830,7 +830,7 @@
       "AccionDonar",
       "evento_prueba",
       "FundacionDireccion",
-      "FundaciopnTlfno",
+      "+34 685650558",
       "fechas_disponibles",
       "fec",
       "isValidDate"
@@ -5297,7 +5297,7 @@
                       {
                         "id": "661a6cf86f0af4a38797bf40",
                         "environmentID": "66159ac4264e736224ee6425",
-                        "name": "FundaciopnTlfno",
+                        "name": "+34 685650558",
                         "assistantID": "66159ac4264e736224ee6424",
                         "createdByID": 933377,
                         "folderID": null,
@@ -6332,7 +6332,7 @@
                       },
                       {
                         "id": "661a6cf86f0af4a38797bf40",
-                        "name": "FundaciopnTlfno",
+                        "name": "+34 685650558",
                         "isSlot": false,
                         "type": "variable",
                         "children": [
@@ -7839,7 +7839,7 @@
                       {
                         "id": "661a6cf86f0af4a38797bf40",
                         "environmentID": "66159ac4264e736224ee6425",
-                        "name": "FundaciopnTlfno",
+                        "name": "+34 685650558",
                         "assistantID": "66159ac4264e736224ee6424",
                         "createdByID": 933377,
                         "folderID": null,
@@ -11760,7 +11760,7 @@
                       },
                       {
                         "id": "661a6cf86f0af4a38797bf40",
-                        "name": "FundaciopnTlfno",
+                        "name": "+34 685650558",
                         "isSlot": false,
                         "type": "variable",
                         "children": [
@@ -16438,7 +16438,7 @@
     },
     {
       "id": "661a6cf86f0af4a38797bf40",
-      "name": "FundaciopnTlfno",
+      "name": "+34 685650558",
       "createdByID": 933377,
       "folderID": null,
       "color": "#515A63",

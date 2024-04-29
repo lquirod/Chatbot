@@ -26,7 +26,7 @@ entities:
   - tipo_voluntariado
   - NameCompany
   - FundacionDireccion
-  - FundaciopnTlfno
+  - +34 685650558
 
 slots:
   tipo_voluntariado:
@@ -34,28 +34,6 @@ slots:
     mappings:
     - type: from_entity
       entity: tipo_voluntariado
-
-  NameCompany:
-    type: text
-    influence_conversation: false
-    initial value: AyudaPet
-    mappings:
-    - type: custom
-
-  FundacionDireccion:
-    type: text
-    influence_conversation: false
-    initial value: Camino de la Aurora, 5, CP 18330, Granada
-    mappings:
-    - type: custom
-
-  FundaciopnTlfno:
-    type: text
-    influence_conversation: false
-    initial value: +34 685650558
-    mappings:
-    - type: custom
-
 
 responses:
   utter_greet:
