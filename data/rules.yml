@@ -7,7 +7,7 @@ rules:
 
 - rule: El usuario quiere realizar una donación monetaria
   steps:
-  - intent: Donación_monetaria
+  - intent: Donacion_monetaria
   - action: utter_Donacion_monetaria
 
 - rule: El usuario quiere realizar la donación monetaria por bizum 
@@ -38,5 +38,25 @@ rules:
 - rule: El usuario cancela su operación
   steps:
   - intent: Cancelar
-  - action: utter_Cancelar
+  - action: utter_Cancelando
+
+- rule: Saludos básicos
+  steps:
+    - intent: saludos
+    - action: utter_saludos
+
+- rule: Responder a ayudar en el refugio
+  steps:
+    - intent: ayudar_refugio
+    - action: utter_ayudar_refugio
+
+- rule: Responder a participar en eventos
+  steps:
+    - intent: participar_eventos
+    - action: utter_participar_eventos
+
+- rule: Responder a recaudación de fondos
+  steps:
+    - intent: participar_recaudacion
+    - action: utter_participar_recaudacion
 

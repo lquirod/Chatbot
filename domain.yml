@@ -1,18 +1,9 @@
 version: "3.1"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
   - Saludos
   - Ayuda
-  - Donación
-  - Donación monetaria
-  - Donación material
+  - Donacion_monetaria
   - Voluntariado
   - Voluntariado_Albergue
   - Voluntariado_Eventos
@@ -22,12 +13,19 @@ intents:
   - Adiós
   - Cancelar
   - Donacion
-  - Donación_monetaria
   - Bizum
   - Efectivo
   - Transferencia_bancaria
   - Donacion_Material
-  
+  - Donar_Cantidad
+  - SelecTransferencia
+  - SelecBizum
+  - SelecEfectivo
+  - ayudar_refugio
+  - participar_eventos
+  - participar_recaudacion
+  - confirmar_fecha
+
 entities:
   - tipo_voluntariado
   - cantidad_donacion
@@ -53,28 +51,37 @@ slots:
     mappings:
     - type: from_entity
       entity: cantidad_donacion
-      
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_voluntariado
+  - utter_voluntariado_albergue
+  - utter_voluntariado_eventos
+  - utter_voluntariado_recaudacion
+  - utter_Cancelando
+  - utter_Donacion
+  - utter_Donacion_monetaria
+  - utter_tipo_Donacion
+  - utter_Bizum
+  - utter_Efectivo
+  - utter_Transferencia_bancaria
+  - utter_Donacion_Material
+  - utter_saludos
+  - utter_opciones_voluntariado
+  - utter_preguntar_fecha
+  - action_validar_fecha
+  - utter_confirmar_registro
+  - utter_agradecimiento
+  - utter_ayudar_refugio
+  - utter_participar_eventos
+  - utter_participar_recaudacion
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
   utter_voluntariado:
   - text: "¡Genial! Para realizar un voluntariado con nosotros, tienes las siguientes opciones: Ayudar en el albergue, Participar en eventos de adopción o Participar en actividades de recaudación de fondos. ¿En qué área te gustaría colaborar?"
 
@@ -101,23 +108,29 @@ responses:
       -> 100 €    -> 200 €
 
   utter_tipo_Donacion:
-  - text: |
-      Entonces, ¿Cómo quieres aportar tu donación de {DonarCantidad}? Tenemos las siguientes vías disponibles
-      -> Transferencia bancaria.
-      -> Bizum
-      -> Efectivo
-
+  - text: "Entonces, ¿Cómo quieres aportar tu donación de {DonarCantidad}? Tenemos las siguientes vías disponibles"
+    buttons:
+    - title: "Transferencia bancaria"
+      payload: "/SelecTransferencia"
+    - title: "Bizum"
+      payload: "/SelecBizum"
+    - title: "Efectivo"
+      payload: "/SelecEfectivo"
+  
   utter_Bizum:
   - text: |
-      Perfecto, para poder enviarnos la donación mediante bizum hágalo a nuestro teléfono {+34 685650558} con el asunto "Donación NameCompany".
+      Perfecto, para poder enviarnos la donación mediante bizum hágalo a nuestro teléfono +34 685650558 con el asunto "Donación NameCompany".
+      ¡Gracias por su donación para ayudar a nuestros amigos!
 
   utter_Efectivo:
   - text: |
       Si prefieres entregar tu donación en efectivo en nuestras oficinas, nuestro equipo estará encantado de recibirte y agradecerte personalmente por tu apoyo. Recibirás un comprobante de la donación realizada. Por favor, consulta nuestros horarios de atención y asegúrate de planificar tu visita. Te esperamos en Camino de la Aurora, 5, CP 18330, Granada
+      ¡Gracias por su donación para ayudar a nuestros amigos!
 
   utter_Transferencia_bancaria:
   - text: |
       Para realizar una donación por transferencia bancaria, ingrese su donación con el asunto: 'Donación NameCompany' en la siguiente cuenta: "IBAN ES70 1234 1234 0101 2345 6789"
+      ¡Gracias por su donación para ayudar a nuestros amigos!
 
   utter_Donacion_Material:
   - text:  |
@@ -126,12 +139,42 @@ responses:
       Te explicamos cómo puedes contribuir y realizar la entrega personal o a traves de envios a nuestras oficinas:
       -> Asegúrate de empaquetarlos de manera segura para evitar daños durante el transporte.
       -> Nuestra dirección es "Camino de la Aurora, 5, CP 18330, Granada", estaremos encantados de atenderte.
-      -> Puedes contactar con nosotros a través de nuestro teléfono {+34 685650558}
+      -> Puedes contactar con nosotros a través de nuestro teléfono +34 685650558
 
       Si lo deseas, te animamos a revisar nuestra lista de necesidades prioritarias. Esto nos ayuda a garantizar que recibamos los materiales más necesarios en el momento adecuado. Puedes mirarlo en nuestra web www.refugioanimal.com/nr¡ecesidades
+      ¡Gracias por su donación para ayudar a nuestros amigos!
+  utter_saludos:
+    - text: "Hola, ¿cómo puedo ayudarte hoy?"
+    - text: "¡Buen día! ¿En qué puedo asistirte?"
 
-  utter_Agradecimiento_donacion:
-  - text: "¡Gracias por su donación para ayudar a nuestros amigos!"
+  utter_opciones_voluntariado:
+    - text: "Para realizar un voluntariado con nosotros, tienes las siguientes opciones. ¿En qué área te gustaría colaborar?"
+      buttons:
+        - title: "🏠 Ayudar en el refugio"
+          payload: "/ayudar_refugio"
+        - title: "🎉 Participar en eventos"
+          payload: "/participar_eventos"
+        - title: "💰 Participar en la recaudación de fondos"
+          payload: "/participar_recaudacion"
+
+  utter_ayudar_refugio:
+    - text: "¡Genial! Ayudar en el refugio incluye actividades como cuidar a los animales y mantener las instalaciones. ¿Qué días estás disponible?"
+
+  utter_participar_eventos:
+    - text: "Participar en eventos es una gran manera de ayudar. Necesitamos voluntarios para organización y logística. ¿Te interesa algún evento en particular?"
+
+  utter_participar_recaudacion:
+    - text: "La recaudación de fondos es crucial para nuestra fundación. Puedes ayudar organizando eventos de recaudación o promoviendo nuestras campañas en línea. ¿Cuál prefieres?"
+
+  utter_preguntar_fecha:
+    - text: "¿Qué fecha te vendría bien para venir a ayudar al refugio?"
+
+  utter_confirmar_registro:
+    - text: "Perfecto, hemos registrado tu participación para el día {fecha}. ¡Gracias por tu apoyo!"
+
+  utter_agradecimiento:
+    - text: "¡Gracias por ser parte de nuestra fundación y ayudar a los animales necesitados!"
+
 
 session_config:
   session_expiration_time: 60

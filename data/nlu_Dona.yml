@@ -48,7 +48,6 @@ nlu:
 - lookup: efectivo
   examples: |
     - efectivo
-    - en efectivo
     - fisico
     - fisicamente
 
@@ -69,7 +68,7 @@ nlu:
     - quiero [donativo](donativo)
 
 # Donación monetaria
-- intent: Donación_monetaria
+- intent: Donacion_monetaria
   examples: |
     - quiero [donar](donar) [monetario](monetario)
     - [donar](donar) [monetario](monetario)
@@ -87,6 +86,7 @@ nlu:
     - Bizum
 
 - intent: Efectivo
+  examples: |
     - quiero [donar](donar) [efectivo](efectivo)
     - [donar](donar) [donativo](donativo) [efectivo](efectivo)
     - [donar](donar) [efectivo](efectivo)
@@ -94,6 +94,7 @@ nlu:
     - [efectivo](efectivo)
 
 - intent: Transferencia_bancaria
+  examples: |
     - quiero [donar](donar) [transferencia](transferencia)
     - [donar](donar) [donativo](donativo) [material](material)
     - [donar](donar) por [transferencia](transferencia)
@@ -102,6 +103,7 @@ nlu:
 
 # Donación material
 - intent: Donacion_Material
+  examples: |
     - quiero [donar](donar) [material](material)
     - [donar](donar) [donativo](donativo) [material](material)
     - [donar](donar) [material](material)
@@ -110,6 +112,7 @@ nlu:
 
 # Cantidad de donación
 - intent: Donar_Cantidad
+  examples: |
     - quiero [donar](donar) (5)[cantidad_donacion]
     - [donar](donar) (20)[cantidad_donacion] [donativo](donativo) [material](material)
     - [donar](donar) (15)[cantidad_donacion] [material](material)

@@ -1,34 +1,6 @@
 version: "3.1"
 
 stories:
-
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
-
 - story: Voluntariado
   steps:
   - intent: Voluntariado
@@ -45,39 +17,68 @@ stories:
   - action: utter_Donacion
   - intent: Donacion_Material
   - action: utter_Donacion_Material
-  - action: utter_Agradecimiento_donacion
 
 - story: Donación monetaria efectivo
   steps:
   - intent: Donacion
   - action: utter_Donacion
-  - intent: Donación_monetaria
+  - intent: Donacion_monetaria
   - action: utter_Donacion_monetaria
+  - intent: Donar_Cantidad
+  - action: utter_tipo_Donacion
   - intent: Efectivo
   - action: utter_Efectivo
-  - action: utter_Agradecimiento_donacion
 
 - story: Donación monetaria bizum
   steps:
-  - intent: Donación_monetaria
+  - intent: Donacion_monetaria
   - action: utter_Donacion_monetaria
+  - intent: Donar_Cantidad
+  - action: utter_tipo_Donacion
   - intent: Bizum
   - action: utter_Bizum
-  - action: utter_Agradecimiento_donacion
 
 - story: Donación monetaria Efectivo
   steps:
-  - intent: Donación_monetaria
+  - intent: Donacion_monetaria
   - action: utter_Donacion_monetaria
+  - intent: Donar_Cantidad
+  - action: utter_tipo_Donacion
   - slot_was_set:
-    - cantidad_donacion: 20 €
+    - cantidad_donacion: null
   - intent: Transferencia_bancaria
   - action: utter_Transferencia_bancaria
-  - action: utter_Agradecimiento_donacion
 
 - story: Cancela una operación
   steps:
-  - intent: Donación_monetaria
+  - intent: Donacion_monetaria
   - action: utter_Donacion_monetaria
   - intent: Cancelar
-  - action: utter_Cancelar
+  - action: utter_Cancelando
+
+- story: Voluntariado path
+  steps:
+    - intent: voluntariado
+    - action: utter_opciones_voluntariado
+    - intent: ayudar_refugio
+    - action: utter_ayudar_refugio
+
+- story: happy path after greeting
+  steps:
+    - intent: saludos
+    - action: utter_saludos
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+
+- story: Voluntariado after greeting
+  steps:
+    - intent: saludos
+    - action: utter_saludos
+    - intent: voluntariado
+    - action: utter_opciones_voluntariado
+    - intent: ayudar_refugio
+    - action: utter_ayudar_refugio
+    - intent: confirmar_fecha
+    - action: utter_confirmar_registro
