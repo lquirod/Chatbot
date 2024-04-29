@@ -10,27 +10,12 @@ intents:
 
 entities:
 - cantidad_donacion
-
-slots:
-  cantidad_donacion:
-    type: categorical
-    values:
-      - 5 €
-      - 10 €
-      - 15 €
-      - 20 €
-      - 30 €
-      - 50 €
-      - 100 €
-      - 200 €
-    - type: from_entity
-      entity: cantidad_donacion
       
 responses:
   utter_Donacion:
   - text: "Puedes ayudarnos realizando una donación Económica o de recursos y materiales para nuestros animales (comida, juguetes, ropa etc)."
 
-  utter_Donación_monetaria:
+  utter_Donacion_monetaria:
   - text: |
     Escoja la cantidad que desea donar en euros:
      -> 5 €      -> 10 €     -> 15 €

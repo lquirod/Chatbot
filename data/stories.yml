@@ -52,7 +52,7 @@ stories:
   - intent: Donacion
   - action: utter_Donacion
   - intent: Donación_monetaria
-  - action: utter_Donación_monetaria
+  - action: utter_Donacion_monetaria
   - intent: Efectivo
   - action: utter_Efectivo
   - action: utter_Agradecimiento_donacion
@@ -60,7 +60,7 @@ stories:
 - story: Donación monetaria bizum
   steps:
   - intent: Donación_monetaria
-  - action: utter_Donación_monetaria
+  - action: utter_Donacion_monetaria
   - intent: Bizum
   - action: utter_Bizum
   - action: utter_Agradecimiento_donacion
@@ -68,9 +68,9 @@ stories:
 - story: Donación monetaria Efectivo
   steps:
   - intent: Donación_monetaria
-  - action: utter_Donación_monetaria
+  - action: utter_Donacion_monetaria
   - slot_was_set:
-    - requested_slot: cantidad_donacion
+    - cantidad_donacion: 20 €
   - intent: Transferencia_bancaria
   - action: utter_Transferencia_bancaria
   - action: utter_Agradecimiento_donacion
@@ -78,8 +78,6 @@ stories:
 - story: Cancela una operación
   steps:
   - intent: Donación_monetaria
-  - action: utter_Donación_monetaria
-  - slot_was_set:
-    - requested_slot: cantidad_donacion
+  - action: utter_Donacion_monetaria
   - intent: Cancelar
   - action: utter_Cancelar

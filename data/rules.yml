@@ -8,7 +8,7 @@ rules:
 - rule: El usuario quiere realizar una donación monetaria
   steps:
   - intent: Donación_monetaria
-  - action: utter_Donación_monetaria
+  - action: utter_Donacion_monetaria
 
 - rule: El usuario quiere realizar la donación monetaria por bizum 
   steps:
@@ -30,10 +30,10 @@ rules:
   - intent: Donacion_Material
   - action: utter_Donacion_Material
 
-- rule: El usuario quiere cambiar la cantidad de donación monetaria
+- rule: El usuario dice la cantidad que quiere donar
   steps:
-  - intent: CambiarCantidad
-  - action: utter_CambiarCantidad
+  - intent: Donar_Cantidad
+  - action: utter_tipo_Donacion
 
 - rule: El usuario cancela su operación
   steps:
