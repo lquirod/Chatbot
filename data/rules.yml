@@ -42,8 +42,8 @@ rules:
 
 - rule: Saludos básicos
   steps:
-    - intent: saludos
-    - action: utter_saludos
+    - intent: Saludos
+    - action: utter_Saludos
 
 - rule: Responder a ayudar en el refugio
   steps:

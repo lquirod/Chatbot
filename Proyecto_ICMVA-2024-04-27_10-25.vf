@@ -154,11 +154,11 @@
             "slots": [],
             "inputs": [
               {
-                "text": "Como puedo hacer un voluntariado",
+                "text": "Como puedo hacer un Voluntariado",
                 "slots": []
               },
               {
-                "text": "QUe voluntariados tienes",
+                "text": "QUe Voluntariados tienes",
                 "slots": []
               },
               {
@@ -166,19 +166,19 @@
                 "slots": []
               },
               {
-                "text": "¿Cuáles son los requisitos para participar en un voluntariado?",
+                "text": "¿Cuáles son los requisitos para participar en un Voluntariado?",
                 "slots": []
               },
               {
-                "text": "¿Cuál es la duración típica de un voluntariado?",
+                "text": "¿Cuál es la duración típica de un Voluntariado?",
                 "slots": []
               },
               {
-                "text": "¿Dónde puedo encontrar oportunidades de voluntariado?",
+                "text": "¿Dónde puedo encontrar oportunidades de Voluntariado?",
                 "slots": []
               },
               {
-                "text": "¿Qué tipos de actividades de voluntariado están disponibles?",
+                "text": "¿Qué tipos de actividades de Voluntariado están disponibles?",
                 "slots": []
               },
               {
@@ -982,7 +982,7 @@
             "inputs": [
               "adoptar,acoger",
               "información,necesito",
-              "voluntariado,ayudar,presentar",
+              "Voluntariado,ayudar,presentar",
               "donación,dar,donar,dinero,material,billete,moneda"
             ],
             "type": {
@@ -1047,7 +1047,7 @@
             "inputs": [
               "adoptar,acoger",
               "información,necesito",
-              "voluntariado,ayudar,presentar",
+              "Voluntariado,ayudar,presentar",
               "donación,dar,donar,dinero,material,billete,moneda"
             ],
             "type": {
@@ -1138,7 +1138,7 @@
             "datatype": "any",
             "isArray": false
           },
-          "edad_voluntariado": {
+          "edad_Voluntariado": {
             "isSystem": false,
             "defaultValue": null,
             "datatype": "any",
@@ -1259,7 +1259,7 @@
       "evento_seleccionado",
       "Eventos_Prueba",
       "nombreVoluntario",
-      "edad_voluntariado",
+      "edad_Voluntariado",
       "telefono_voluntario",
       "email_voluntario",
       "AccionDonar",
@@ -1316,7 +1316,7 @@
           "inputs": [
             "adoptar,acoger",
             "información,necesito",
-            "voluntariado,ayudar,presentar",
+            "Voluntariado,ayudar,presentar",
             "donación,dar,donar,dinero,material,billete,moneda"
           ],
           "type": {
@@ -1358,7 +1358,7 @@
               "slots": []
             },
             {
-              "text": "¿Hay oportunidades de voluntariado en el extranjero?",
+              "text": "¿Hay oportunidades de Voluntariado en el extranjero?",
               "slots": []
             },
             {
@@ -1398,7 +1398,7 @@
               "slots": []
             },
             {
-              "text": "Necesito información sobre oportunidades de voluntariado para jóvenes",
+              "text": "Necesito información sobre oportunidades de Voluntariado para jóvenes",
               "slots": []
             },
             {
@@ -1418,7 +1418,7 @@
               "slots": []
             },
             {
-              "text": "¿Cuáles son las oportunidades de voluntariado disponibles?",
+              "text": "¿Cuáles son las oportunidades de Voluntariado disponibles?",
               "slots": []
             },
             {
@@ -1575,11 +1575,11 @@
           "slots": [],
           "inputs": [
             {
-              "text": "Como puedo hacer un voluntariado",
+              "text": "Como puedo hacer un Voluntariado",
               "slots": []
             },
             {
-              "text": "QUe voluntariados tienes",
+              "text": "QUe Voluntariados tienes",
               "slots": []
             },
             {
@@ -1587,19 +1587,19 @@
               "slots": []
             },
             {
-              "text": "¿Cuáles son los requisitos para participar en un voluntariado?",
+              "text": "¿Cuáles son los requisitos para participar en un Voluntariado?",
               "slots": []
             },
             {
-              "text": "¿Cuál es la duración típica de un voluntariado?",
+              "text": "¿Cuál es la duración típica de un Voluntariado?",
               "slots": []
             },
             {
-              "text": "¿Dónde puedo encontrar oportunidades de voluntariado?",
+              "text": "¿Dónde puedo encontrar oportunidades de Voluntariado?",
               "slots": []
             },
             {
-              "text": "¿Qué tipos de actividades de voluntariado están disponibles?",
+              "text": "¿Qué tipos de actividades de Voluntariado están disponibles?",
               "slots": []
             },
             {
@@ -3323,7 +3323,7 @@
                   {
                     "children": [
                       {
-                        "text": "Claro, para realizar un voluntariados con nosotros tienes las siguientes opcione:  ¿En qué área te gustaría colaborar? Puedes elegir entre 🏠 "
+                        "text": "Claro, para realizar un Voluntariados con nosotros tienes las siguientes opcione:  ¿En qué área te gustaría colaborar? Puedes elegir entre 🏠 "
                       },
                       {
                         "text": "Ayudar en el refugio",
@@ -7666,7 +7666,7 @@
                   {
                     "children": [
                       {
-                        "text": "Claro, para realizar un voluntariados con nosotros tienes las siguientes opcione:  ¿En qué área te gustaría colaborar? Puedes elegir entre 🏠 "
+                        "text": "Claro, para realizar un Voluntariados con nosotros tienes las siguientes opcione:  ¿En qué área te gustaría colaborar? Puedes elegir entre 🏠 "
                       },
                       {
                         "text": "Ayudar en el albergue",
@@ -12969,7 +12969,7 @@
     {
       "id": "661a4e896f0af4a38797bd20",
       "language": "en-us",
-      "value": "voluntariado",
+      "value": "Voluntariado",
       "synonyms": [
         "ayudar",
         "presentar"
@@ -13543,7 +13543,7 @@
       "text": [
         {
           "text": [
-            "¿Hay oportunidades de voluntariado en el extranjero?"
+            "¿Hay oportunidades de Voluntariado en el extranjero?"
           ]
         }
       ],
@@ -13673,7 +13673,7 @@
       "text": [
         {
           "text": [
-            "Necesito información sobre oportunidades de voluntariado para jóvenes"
+            "Necesito información sobre oportunidades de Voluntariado para jóvenes"
           ]
         }
       ],
@@ -13974,7 +13974,7 @@
       "text": [
         {
           "text": [
-            "¿Cuáles son las oportunidades de voluntariado disponibles?"
+            "¿Cuáles son las oportunidades de Voluntariado disponibles?"
           ]
         }
       ],
@@ -14260,7 +14260,7 @@
       "text": [
         {
           "text": [
-            "Como puedo hacer un voluntariado"
+            "Como puedo hacer un Voluntariado"
           ]
         }
       ],
@@ -14273,7 +14273,7 @@
       "text": [
         {
           "text": [
-            "QUe voluntariados tienes"
+            "QUe Voluntariados tienes"
           ]
         }
       ],
@@ -14299,7 +14299,7 @@
       "text": [
         {
           "text": [
-            "¿Cuáles son los requisitos para participar en un voluntariado?"
+            "¿Cuáles son los requisitos para participar en un Voluntariado?"
           ]
         }
       ],
@@ -14312,7 +14312,7 @@
       "text": [
         {
           "text": [
-            "¿Cuál es la duración típica de un voluntariado?"
+            "¿Cuál es la duración típica de un Voluntariado?"
           ]
         }
       ],
@@ -14325,7 +14325,7 @@
       "text": [
         {
           "text": [
-            "¿Dónde puedo encontrar oportunidades de voluntariado?"
+            "¿Dónde puedo encontrar oportunidades de Voluntariado?"
           ]
         }
       ],
@@ -14338,7 +14338,7 @@
       "text": [
         {
           "text": [
-            "¿Qué tipos de actividades de voluntariado están disponibles?"
+            "¿Qué tipos de actividades de Voluntariado están disponibles?"
           ]
         }
       ],
@@ -16783,7 +16783,7 @@
     },
     {
       "id": "661a5157ac2c4721d730766d",
-      "name": "edad_voluntariado",
+      "name": "edad_Voluntariado",
       "createdByID": 934809,
       "folderID": null,
       "color": "#515A63",

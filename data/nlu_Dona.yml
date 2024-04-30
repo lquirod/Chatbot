@@ -20,6 +20,7 @@ nlu:
     - monetariamente
     - monetaria
     - economica
+    - economico
 
 #  Material
 - lookup: material

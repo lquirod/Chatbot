@@ -1,16 +1,6 @@
 version: "3.1"
 
 stories:
-- story: Voluntariado
-  steps:
-  - intent: Voluntariado
-  - action: utter_voluntariado
-
-- story: Donación
-  steps:
-  - intent: Donacion
-  - action: utter_Donacion
-
 - story: Donación material
   steps:
   - intent: Donacion
@@ -58,26 +48,17 @@ stories:
 
 - story: Voluntariado path
   steps:
-    - intent: voluntariado
-    - action: utter_opciones_voluntariado
+    - intent: Voluntariado
+    - action: utter_opciones_Voluntariado
     - intent: ayudar_refugio
     - action: utter_ayudar_refugio
 
-- story: happy path after greeting
-  steps:
-    - intent: saludos
-    - action: utter_saludos
-    - intent: greet
-    - action: utter_greet
-    - intent: mood_great
-    - action: utter_happy
-
 - story: Voluntariado after greeting
   steps:
-    - intent: saludos
-    - action: utter_saludos
-    - intent: voluntariado
-    - action: utter_opciones_voluntariado
+    - intent: Saludos
+    - action: utter_Saludos
+    - intent: Voluntariado
+    - action: utter_opciones_Voluntariado
     - intent: ayudar_refugio
     - action: utter_ayudar_refugio
     - intent: confirmar_fecha

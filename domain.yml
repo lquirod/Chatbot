@@ -25,44 +25,31 @@ intents:
   - participar_eventos
   - participar_recaudacion
   - confirmar_fecha
+  
 
 entities:
-  - tipo_voluntariado
+  - tipo_Voluntariado
   - cantidad_donacion
 
 slots:
-  tipo_voluntariado:
+  tipo_Voluntariado:
     type: text
     mappings:
     - type: from_entity
-      entity: tipo_voluntariado
+      entity: tipo_Voluntariado
 
   cantidad_donacion:
-    type: categorical
-    values:
-      - 5 €
-      - 10 €
-      - 15 €
-      - 20 €
-      - 30 €
-      - 50 €
-      - 100 €
-      - 200 €
+    type: float
+    influence_conversation: false
     mappings:
     - type: from_entity
       entity: cantidad_donacion
 
 actions:
-  - utter_greet
-  - utter_cheer_up
-  - utter_did_that_help
-  - utter_happy
-  - utter_goodbye
-  - utter_iamabot
-  - utter_voluntariado
-  - utter_voluntariado_albergue
-  - utter_voluntariado_eventos
-  - utter_voluntariado_recaudacion
+  - utter_Voluntariado
+  - utter_Voluntariado_albergue
+  - utter_Voluntariado_eventos
+  - utter_Voluntariado_recaudacion
   - utter_Cancelando
   - utter_Donacion
   - utter_Donacion_monetaria
@@ -71,8 +58,8 @@ actions:
   - utter_Efectivo
   - utter_Transferencia_bancaria
   - utter_Donacion_Material
-  - utter_saludos
-  - utter_opciones_voluntariado
+  - utter_Saludos
+  - utter_opciones_Voluntariado
   - utter_preguntar_fecha
   - action_validar_fecha
   - utter_confirmar_registro
@@ -82,40 +69,57 @@ actions:
   - utter_participar_recaudacion
 
 responses:
-  utter_voluntariado:
-  - text: "¡Genial! Para realizar un voluntariado con nosotros, tienes las siguientes opciones: Ayudar en el albergue, Participar en eventos de adopción o Participar en actividades de recaudación de fondos. ¿En qué área te gustaría colaborar?"
+  utter_Voluntariado:
+  - text: "¡Genial 😊! Para realizar un Voluntariado con nosotros, tienes las siguientes opciones: Ayudar en el albergue, Participar en eventos de adopción  o Participar en actividades de recaudación de fondos. ¿En qué área te gustaría colaborar?"
 
-  utter_voluntariado_albergue:
+  utter_Voluntariado_albergue:
   - text: "¡Fantástico! Para ayudar en nuestro albergue, necesitamos voluntarios en diferentes áreas como cuidado de animales, limpieza y mantenimiento. ¿Qué días y horarios te quedarían bien para venir a echarnos una mano?"
 
-  utter_voluntariado_eventos:
+  utter_Voluntariado_eventos:
   - text: "¡Increíble! Participar en nuestros eventos de adopción es una excelente manera de ayudar. Necesitamos voluntarios para tareas como organización, atención al público y cuidado de los animales durante el evento. ¿Qué fechas te vienen bien para participar?"
 
-  utter_voluntariado_recaudacion:
+  utter_Voluntariado_recaudacion:
   - text: "¡Muchas gracias por tu interés en participar en nuestras actividades de recaudación de fondos! Puedes ayudarnos en la organización de eventos, difusión en redes sociales y captación de donaciones. ¿En qué actividad específica te gustaría colaborar?"
 
   utter_Cancelando:
-  - text: "Cancelando operación..."
+  - text: "❌ Cancelando operación..."
 
   utter_Donacion:
   - text: "Puedes ayudarnos realizando una donación Económica o de recursos y materiales para nuestros animales (comida, juguetes, ropa etc)."
 
   utter_Donacion_monetaria:
-  - text: |
-      Escoja la cantidad que desea donar en euros:
-      -> 5 €      -> 10 €     -> 15 €
-      -> 20 €     -> 30 €     -> 50 €
-      -> 100 €    -> 200 €
+  - text: "Escoja la cantidad que desea donar en euros:"
+    buttons:
+    - title: "🪙 5 €"
+      payload: "/Donar_Cantidad{\"cantidad_donacion\" : 5}"
+    - title: "👛 10 €"
+      payload: "/Donar_Cantidad{\"cantidad_donacion\" : 10}"
+    - title: "👛 15 €"
+      payload: "/Donar_Cantidad{\"cantidad_donacion\" : 15}"
+    - title: "💰 20 €"
+      payload: "/Donar_Cantidad{\"cantidad_donacion\" : 20}"
+    - title: "💰 30 €"
+      payload: "/Donar_Cantidad{\"cantidad_donacion\" : 30}"
+    - title: "💸 50 €"
+      payload: "/Donar_Cantidad{\"cantidad_donacion\" : 50}"
+    - title: "💸 100 €"
+      payload: "/Donar_Cantidad{\"cantidad_donacion\" : 100}"
+    - title: "🤑 200 €"
+      payload: "/Donar_Cantidad{\"cantidad_donacion\" : 200}"
+    - title: "🙅 Cancelar"
+      payload: "/Cancelar"
 
   utter_tipo_Donacion:
-  - text: "Entonces, ¿Cómo quieres aportar tu donación de {DonarCantidad}? Tenemos las siguientes vías disponibles"
+  - text: "Entonces, ¿Cómo quieres aportar tu donación de {cantidad_donacion} €? Tenemos las siguientes vías disponibles"
     buttons:
-    - title: "Transferencia bancaria"
-      payload: "/SelecTransferencia"
-    - title: "Bizum"
-      payload: "/SelecBizum"
-    - title: "Efectivo"
-      payload: "/SelecEfectivo"
+    - title: "🏦 Transferencia bancaria"
+      payload: "/Transferencia_bancaria"
+    - title: "📲 Bizum"
+      payload: "/Bizum"
+    - title: "💵 Efectivo"
+      payload: "/Efectivo"
+    - title: "🙅 Cancelar"
+      payload: "/Donacion_monetaria"
   
   utter_Bizum:
   - text: |
@@ -143,12 +147,12 @@ responses:
 
       Si lo deseas, te animamos a revisar nuestra lista de necesidades prioritarias. Esto nos ayuda a garantizar que recibamos los materiales más necesarios en el momento adecuado. Puedes mirarlo en nuestra web www.refugioanimal.com/nr¡ecesidades
       ¡Gracias por su donación para ayudar a nuestros amigos!
-  utter_saludos:
+  utter_Saludos:
     - text: "Hola, ¿cómo puedo ayudarte hoy?"
     - text: "¡Buen día! ¿En qué puedo asistirte?"
 
-  utter_opciones_voluntariado:
-    - text: "Para realizar un voluntariado con nosotros, tienes las siguientes opciones. ¿En qué área te gustaría colaborar?"
+  utter_opciones_Voluntariado:
+    - text: "Para realizar un Voluntariado con nosotros, tienes las siguientes opciones. ¿En qué área te gustaría colaborar?"
       buttons:
         - title: "🏠 Ayudar en el refugio"
           payload: "/ayudar_refugio"

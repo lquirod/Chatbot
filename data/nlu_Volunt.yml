@@ -1,19 +1,19 @@
 nlu:
-  - intent: saludos
+  - intent: Saludos
     examples: |
       - Hola
       - Buenos días
       - Saludos
 
-  - intent: voluntariado
+  - intent: Voluntariado
     examples: |
-      - Como puedo hacer un voluntariado
-      - Que voluntariados tienes
+      - Como puedo hacer un Voluntariado
+      - Que Voluntariados tienes
       - Como aplico
-      - ¿Cuáles son los requisitos para participar en un voluntariado?
-      - ¿Cuál es la duración típica de un voluntariado?
-      - ¿Dónde puedo encontrar oportunidades de voluntariado?
-      - ¿Qué tipos de actividades de voluntariado están disponibles?
+      - ¿Cuáles son los requisitos para participar en un Voluntariado?
+      - ¿Cuál es la duración típica de un Voluntariado?
+      - ¿Dónde puedo encontrar oportunidades de Voluntariado?
+      - ¿Qué tipos de actividades de Voluntariado están disponibles?
       - ¿Cuál es el proceso de solicitud para ser voluntario?
 
   - intent: confirmar_fecha
